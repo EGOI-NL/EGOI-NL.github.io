@@ -75,7 +75,7 @@ export const Footer = () => {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Leer programmeren</ListHeader>
-            {footerItems.evenement.map((item) => {
+            {footerItems.kolom1.map((item) => {
               return (
                 <Link
                   key={item.label}
@@ -89,8 +89,23 @@ export const Footer = () => {
             })}
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Team</ListHeader>
-            {footerItems.team.map((item) => {
+            <ListHeader>EGOI</ListHeader>
+            {footerItems.kolom2.map((item) => {
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  fontSize={'sm'}
+                  _hover={{ color: 'blue.500' }}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
+          </Stack>
+          <Stack align={'flex-start'}>
+            <ListHeader>Organisatie</ListHeader>
+            {footerItems.kolom3.map((item) => {
               return (
                 <Link
                   key={item.label}
