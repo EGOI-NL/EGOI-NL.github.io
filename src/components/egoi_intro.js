@@ -55,7 +55,7 @@ export const EGOI = () => {
           </Stack>
           <Stack flex={5} spacing={{ base: 5, md: 10 }}>
             <Text fontSize={'lg'}>
-              De EGOI 2026 was in Duitsland, ook Nederland heeft weer meegedaan met een team van 4 leerlingen. De hoogtepunten waren: de bronzen medaille voor Alina en de honourable mention voor Lenka, het samen oplossen van puzzels en spellen, de excursie naar Drachenfels, cadeautjes ruilen met andere landen, en karaoke zingen op de afterparty.
+              De EGOI 2025 was in Duitsland, ook Nederland heeft weer meegedaan met een team van 4 leerlingen. De hoogtepunten waren: de bronzen medaille voor Alina en de honourable mention voor Lenka, het samen oplossen van puzzels en spellen, de excursie naar Drachenfels, cadeautjes ruilen met andere landen, en karaoke zingen op de afterparty.
             </Text>
           </Stack>
         </Stack>
