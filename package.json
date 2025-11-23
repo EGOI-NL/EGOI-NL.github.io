@@ -1,5 +1,5 @@
 {
-  "name": "kinderklimaatconcertdag.nl",
+  "name": "EGOI NL website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KinderKlimaatConcertDag/kinderklimaatconcertdag.nl.git"
+    "url": "git+https://github.com/EGOI-NL/EGOI-NL.github.io.git"
   },
-  "author": "Kinder Klimaat Concert Dag",
+  "author": "EGOI NL",
   "license": "Apache 2.0",
   "dependencies": {
     "@chakra-ui/icons": "^2.2.1",

@@ -15,7 +15,7 @@ export const Layout = ({
   description,
   card,
   children,
-  url = 'https://kinderklimaatconcertdag.nl',
+  url = 'https://egoi-nl.github.io',
   enableBanner = false,
 }) => {
   // Track page views
@@ -30,7 +30,7 @@ export const Layout = ({
   // Determine the base URL based on the environment
   const baseUrl =
     process.env.NODE_ENV === 'production'
-      ? 'https://kinderklimaatconcertdag.nl'
+      ? 'https://egoi-nl.github.io'
       : 'http://localhost:3000'
 
   return (

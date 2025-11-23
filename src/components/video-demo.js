@@ -19,8 +19,8 @@ export const VideoDemo = () => {
           <iframe
             width='100%'
             height='450'
-            src='https://player.vimeo.com/external/1133141624.m3u8?s=a41df2d90cbb06b09fb6d6584260f4b6399c3fe7&oauth2_token_id=58974900'
-            title='Kinder Klimaat Concert Dag pitch'
+            src='https://www.youtube.com/watch?v=3UR5k_gTQPw'
+            title='EGOI bij Science Makers Lab 2021'
             allowFullScreen
           ></iframe>
         </Box>

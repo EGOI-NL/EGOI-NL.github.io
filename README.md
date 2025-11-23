@@ -1,6 +1,6 @@
-# KinderKlimaatConcertDag Website
+# EGOI-NL Website
 
-Website for the Kinder Klimaat Concert Dag.
+Website for the EGOI NL
 
 ## Overview
 
@@ -21,7 +21,7 @@ This project uses a combination of Javascript and Typescript (Javascript - as th
 ### 1. Clone the repository
 
 ```bash
-git clone git@github.com:KinderKlimaatConcertDag/kinderklimaatconcertdag.nl.git
+git clone git@github.com:EGOI-NL/EGOI-NL.github.io.git
 ```
 
 ### 2. Install dependencies
