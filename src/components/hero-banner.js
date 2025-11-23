@@ -46,7 +46,7 @@ export const HeroBanner = () => {
           <Stack flex={1} spacing={{ base: 10, md: 20 }}>
             {
               <Image
-                src={'/assets/Programmeercursus.png'}
+                src={'assets/Programmeercursus.png'}
                 alt='Drie meisjes die programmeren.'
                 objectFit='contain'
               ></Image>
