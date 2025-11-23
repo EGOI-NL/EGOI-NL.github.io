@@ -1,0 +1,113 @@
+import { Layout } from '@/components/layout'
+import { Image, Link } from '@/components/mdx'
+import { TeamMember } from '@/components/team-member'
+import { OprichterTeamMembers, BestuurTeamMembers, OverigTeamMembers } from '@/data/team-members'
+import { Box, Container, Heading, SimpleGrid, Text, Stack,
+    Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  TableContainer,
+} from '@chakra-ui/react'
+
+const Cursus = () => {
+  return (
+    <Layout
+      title={'Cursus'}
+      url={`/cursus`}
+    >
+      <Box as='section' py={20}>
+        <Container maxW='container.lg'>
+          <Heading as='h1' size='2xl' textAlign={'center'}>
+            Cursusjaar 2025-2026
+          </Heading>
+
+          <Text fontSize={'lg'} py={10}>
+            Ongeveer vier keer per jaar organiseren we een cursusdag. De volgende cursusdag is een programmeerweekend. Het programmeerweekend begint op vrijdag om 10:00 en eindigt zaterdag om 15:00. Er komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer en dat is helemaal goed. Overdag programmeren we en in de avond is er tijd voor gezelligheid en spelletjes. De cursus is gratis. Wij zorgen voor eten, drinken en een slaapplek. En we helpen je als nodig met vrijdag vrij vragen op school.
+
+          </Text>
+
+
+          <TableContainer w="100%" pt={10}>
+            <Table variant="simple" size="md" tableLayout="fixed">
+              <Thead>
+                <Tr>
+                  <Th
+                    colSpan={2}
+                    textAlign="center"
+                    fontSize="2xl"
+                    fontWeight="extrabold"
+                    bg="orange.50"
+                    py={4}
+                  >
+                    Planning cursusjaar 2025/2026
+                  </Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                  <Tr bg="blue.50">
+                  <Td width="30%">Zaterdag 27 sep 2025</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">
+                    Start nieuwe cursus jaar 2025/2026. <br />
+                    Trainingsdag van 10:00 - 16:00, waarschijnlijk in Amsterdam.
+                  </Td>
+                </Tr>
+
+                <Tr>
+                  <Td>November 2025</Td>
+                  <Td>Trainingsdag of weekend, waarschijnlijk in Utrecht.</Td>
+                </Tr>
+
+                <Tr bg="blue.50">
+                  <Td>Halverwege januari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">
+                    Deadline voor de opgaves van de 1e ronde van de Nederlandse
+                    Informatica Olympiade. Wil je kans maken om mee te gaan naar de
+                    EGOI 2025 dan moet je genoeg punten in de 1e ronde hebben zodat je
+                    door bent naar de 2e ronde.
+                    <br /><br />
+                    Deelname aan de Nederlandse Informatica Olympiade is niet
+                    verplicht, dit is alleen als je dit leuk vindt en kans wil maken
+                    om mee te gaan naar de EGOI 2026.
+                  </Td>
+                </Tr>
+
+                <Tr>
+                  <Td>Februari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsdag of weekend, waarschijnlijk in Utrecht.</Td>
+                </Tr>
+
+                <Tr bg="blue.50">
+                  <Td>Februari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">
+                    De 2e ronde van de Nederlandse Informatica olympiade. De 4 beste
+                    meiden in deze ronde vertegenwoordigen Nederland op de EGOI 2026.
+                    <br /><br />
+                    Deelname is alleen voor de meiden die meegedaan hebben aan de 1e
+                    ronde en door zijn naar de 2e ronde.
+                  </Td>
+                </Tr>
+
+                <Tr>
+                  <Td>Eind april/begin mei 2026</Td>
+                  <Td>Trainingsdag, waarschijnlijk in Utrecht.</Td>
+                </Tr>
+
+                <Tr bg="blue.50">
+                  <Td>12 t/m 18 mei</Td>
+                  <Td>EGOI 2026 in Italië.</Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </TableContainer>
+        </Container>
+      </Box>
+
+    </Layout>
+  )
+}
+
+
+export default Cursus

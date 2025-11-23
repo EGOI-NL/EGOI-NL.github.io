@@ -1,0 +1,3 @@
+exclude = [
+    '^https://doi\.org.*', # forbidden
+    ]
