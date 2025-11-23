@@ -23,6 +23,10 @@ export const Layout = ({
     ReactGA.send({ hitType: 'pageview' })
   }, [])
 
+  const bannerTitle =
+    <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'>Meld je aan voor het cursusweekend op vrijdag 16 en zaterdag 17 januari 2026!</Link>
+  const bannerDescription = ''
+
   // Determine the base URL based on the environment
   const baseUrl =
     process.env.NODE_ENV === 'production'
@@ -57,11 +61,13 @@ export const Layout = ({
         gap={0}
         minHeight={'100vh'}
       >
-        <Box>
+        <Box pt="20px">
           <Header />
           {enableBanner && (
-            <Banner title={bannerTitle} description={bannerDescription}>
-              {bannerChildren}
+            <Banner
+              title={bannerTitle}
+              description={bannerDescription}
+            >
             </Banner>
           )}
           {children}

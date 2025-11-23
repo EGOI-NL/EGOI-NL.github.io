@@ -43,12 +43,14 @@ export const EGOI = () => {
           spacing={{ base: 8, md: 10 }}
           justify={'center'}
           direction={{ base: 'column', md: 'row' }}
+          pt = {10}
         >
           <Stack flex={1} spacing={{ base: 10, md: 20 }}>
             <Image
               src={'/egoi/mascotte.jpg'}
               alt='Uil, de mascotte van het EGOI team.'
               objectFit='contain'
+              maxH="300px"
             />
           </Stack>
           <Stack flex={5} spacing={{ base: 5, md: 10 }}>

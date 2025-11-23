@@ -11,12 +11,10 @@ import {
 export const Banner = ({ title, description, children }) => {
   const {
     isOpen: isVisible,
-    onClose,
-    onOpen,
   } = useDisclosure({ defaultIsOpen: true })
 
   return isVisible ? (
-    <Box pt={16} px={20}>
+    <Box pt={16} px={20} >
       <Alert
         status='info'
         variant='solid'
@@ -24,6 +22,7 @@ export const Banner = ({ title, description, children }) => {
         alignItems='center'
         justifyContent='center'
         textAlign='center'
+        bg="orange.500"
       >
         <AlertIcon />
 
@@ -31,13 +30,6 @@ export const Banner = ({ title, description, children }) => {
         <AlertDescription>{description}</AlertDescription>
         {children}
 
-        <CloseButton
-          alignSelf='flex-start'
-          position='relative'
-          right={-1}
-          top={-1}
-          onClick={onClose}
-        />
       </Alert>
     </Box>
   ) : (

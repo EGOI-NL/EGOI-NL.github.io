@@ -52,7 +52,22 @@ export const HeroBanner = () => {
               ></Image>
             }
 
-          </Stack>
+            <Stack
+                spacing={{ base: 4, sm: 6 }}
+                justify={'center'}
+                direction={{ base: 'column', sm: 'row' }}
+              >
+                <Button
+                  useExternalIcon
+                  as={Link}
+                  variant={'outline'}
+                  colorScheme={'orange'}
+                  href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'
+                >
+                  Meld je aan!
+                </Button>
+              </Stack>
+            </Stack>
         </Stack>
       </Container>
     </Box>
