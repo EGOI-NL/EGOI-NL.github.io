@@ -14,7 +14,7 @@ export const Banner = ({ title, description, children }) => {
   } = useDisclosure({ defaultIsOpen: true })
 
   return isVisible ? (
-    <Box pt={16} px={20} >
+    <Box pt={16} px={5} >
       <Alert
         status='info'
         variant='solid'
