@@ -56,12 +56,17 @@ const Cursus = () => {
                 </Tr>
 
                 <Tr>
-                  <Td>November 2025</Td>
-                  <Td>Trainingsdag of weekend, waarschijnlijk in Utrecht.</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Zaterdag 15 november 2025</Td>
+                  <Td>Trainingsdag, van 10:00-16:00 bij Eljakim in Utrecht.</Td>
                 </Tr>
 
                 <Tr bg="blue.50">
-                  <Td>Halverwege januari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Vrijdag 16 en zaterdag 17 januari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsweekend (van vrijdag 10:00 tot zaterdag 15:00) in het Boshuis in Driebergen.</Td>
+                </Tr>
+
+                <Tr>
+                  <Td>24 januari 2026</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">
                     Deadline voor de opgaves van de 1e ronde van de Nederlandse
                     Informatica Olympiade. Wil je kans maken om mee te gaan naar de
@@ -72,11 +77,6 @@ const Cursus = () => {
                     verplicht, dit is alleen als je dit leuk vindt en kans wil maken
                     om mee te gaan naar de EGOI 2026.
                   </Td>
-                </Tr>
-
-                <Tr>
-                  <Td>Februari 2026</Td>
-                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsdag of weekend, waarschijnlijk in Utrecht.</Td>
                 </Tr>
 
                 <Tr bg="blue.50">
@@ -91,7 +91,7 @@ const Cursus = () => {
                 </Tr>
 
                 <Tr>
-                  <Td>Eind april/begin mei 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Eind april/begin mei 2026</Td>
                   <Td>Trainingsdag, waarschijnlijk in Utrecht.</Td>
                 </Tr>
 
