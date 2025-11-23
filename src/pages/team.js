@@ -7,8 +7,8 @@ import { Box, Container, Heading, SimpleGrid, Text, Stack } from '@chakra-ui/rea
 const Team = () => {
   return (
     <Layout
-      title={'Team'}
-      url={`team`}
+      title={'Bestuur'}
+      url={`/bestuur`}
     >
       <Box as='section' py={20}>
         <Container maxW='container.lg'>

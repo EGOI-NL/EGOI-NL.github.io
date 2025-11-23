@@ -16,7 +16,7 @@ const Cursus = () => {
   return (
     <Layout
       title={'Cursus'}
-      url={`cursus`}
+      url={`/cursus`}
     >
       <Box as='section' py={20}>
         <Container maxW='container.lg'>
