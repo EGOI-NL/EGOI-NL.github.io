@@ -62,8 +62,8 @@ export const Footer = () => {
             <Box>
               <ColorModeImage
                 w={32}
-                lightSrc={'assets/logo.png'}
-                darkSrc={'assets/logo.png'}
+                lightSrc={'/assets/logo.png'}
+                darkSrc={'/assets/logo.png'}
                 alt={'Girls @ Informatica Olympiade logo logo'}
               />
             </Box>
