@@ -19,7 +19,7 @@ const Team = () => {
           <Stack flex={1} spacing={{ base: 10, md: 20 }}>
             {
               <Image
-                src={'team/team.png'}
+                src={'/team/team.png'}
                 alt='De vrijwilligers van Girls @ Informatica Olympiade'
                 objectFit='contain'
                 mt={10}

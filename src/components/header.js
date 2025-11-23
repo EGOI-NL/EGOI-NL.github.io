@@ -77,8 +77,8 @@ export const Header = () => {
             >
               <ColorModeImage
                 w={48}
-                lightSrc={'assets/logo.png'}
-                darkSrc={'assets/logo.png'}
+                lightSrc={'/assets/logo.png'}
+                darkSrc={'/assets/logo.png'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Stack>
