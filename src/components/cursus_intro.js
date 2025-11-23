@@ -36,7 +36,7 @@ De cursus is gratis. Wij zorgen voor snacks, drinken en een lunch.
           <Stack flex={2} spacing={{ base: 10, md: 20 }}>
             {
               <Image
-                src={'/cursus/cursus.png'}
+                src={'cursus/cursus.png'}
                 alt='Een cursusdag.'
                 objectFit='contain'
               ></Image>

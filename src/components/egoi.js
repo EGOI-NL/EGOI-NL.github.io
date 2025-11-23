@@ -30,7 +30,7 @@ export const EGOI = () => {
           <Stack flex={2} spacing={{ base: 10, md: 20 }}>
             {
               <Image
-                src={'/egoi/egoi_team.png'}
+                src={'egoi/egoi_team.png'}
                 alt='Het EGOI team 2025.'
                 objectFit='contain'
               ></Image>
@@ -46,7 +46,7 @@ export const EGOI = () => {
         >
           <Stack flex={1} spacing={{ base: 10, md: 20 }}>
             <Image
-              src={'/egoi/mascotte.jpg'}
+              src={'egoi/mascotte.jpg'}
               alt='Uil, de mascotte van het EGOI team.'
               objectFit='contain'
             />
