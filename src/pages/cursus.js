@@ -50,23 +50,22 @@ const Cursus = () => {
                   <Tr bg="blue.50">
                   <Td width="30%">Zaterdag 27 sep 2025</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">
-                    Start nieuwe cursus jaar 2025/2026. <br />
-                    Trainingsdag van 10:00 - 16:00, waarschijnlijk in Amsterdam.
+                    Trainingsdag van 10:00 - 16:00 op het Metis Montessori college in Amsterdam.
                   </Td>
                 </Tr>
 
                 <Tr>
-                  <Td whiteSpace="normal" wordBreak="break-word">Zaterdag 15 november 2025</Td>
-                  <Td>Trainingsdag, van 10:00-16:00 bij Eljakim in Utrecht.</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Zaterdag 15 nov 2025</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsdag van 10:00-16:00 bij Eljakim in Utrecht.</Td>
                 </Tr>
 
                 <Tr bg="blue.50">
-                  <Td whiteSpace="normal" wordBreak="break-word">Vrijdag 16 en zaterdag 17 januari 2026</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Vrijdag 16 en zaterdag 17 jan 2026</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">Trainingsweekend (van vrijdag 10:00 tot zaterdag 15:00) in het Boshuis in Driebergen.</Td>
                 </Tr>
 
                 <Tr>
-                  <Td>24 januari 2026</Td>
+                  <Td>24 jan 2026</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">
                     Deadline voor de opgaves van de 1e ronde van de Nederlandse
                     Informatica Olympiade. Wil je kans maken om mee te gaan naar de
@@ -80,7 +79,7 @@ const Cursus = () => {
                 </Tr>
 
                 <Tr bg="blue.50">
-                  <Td>Februari 2026</Td>
+                  <Td>feb 2026</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">
                     De 2e ronde van de Nederlandse Informatica olympiade. De 4 beste
                     meiden in deze ronde vertegenwoordigen Nederland op de EGOI 2026.
@@ -96,9 +95,17 @@ const Cursus = () => {
                 </Tr>
 
                 <Tr bg="blue.50">
-                  <Td>12 t/m 18 mei</Td>
+                  <Td>12 t/m 18 mei 2026</Td>
                   <Td>EGOI 2026 in Italië.</Td>
                 </Tr>
+                <Tr>
+                  <Td>26 t/m 28 juni 2026</Td>
+                  <Td>WEOI 2026 in Luxemburg.</Td>
+                </Tr>
+                <Tr bg="blue.50">
+                  <Td>9 t/m 16 aug 2026</Td>
+                  <Td>IOI 2026 in Uzbekistan.</Td>
+                </Tr>                
               </Tbody>
             </Table>
           </TableContainer>
