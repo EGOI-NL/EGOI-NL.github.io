@@ -24,7 +24,7 @@ const Nieuws = () => {
       <SimpleGrid columns={{ base: 1, sm: 1, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
         {[
           { src: '/nieuws/Nieuws0.png', alt: 'EGOI in het nieuws' },
-          { src: '/nieuws/Nieuws1.png', alt: 'Team NL op de EGOI' },
+          { src: '/nieuws/Nieuws1.PNG', alt: 'Team NL op de EGOI' },
           { src: '/nieuws/Nieuws2.png', alt: 'Team NL op de EGOI' },
         ].map(({ src, alt }) => (
           <Box

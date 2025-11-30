@@ -31,7 +31,7 @@ const Egoi = () => {
           { src: '/egoi/FotoEGOI2.JPG', alt: 'Team NL op de EGOI' },
           { src: '/egoi/FotoEGOI3.JPG', alt: 'Team NL op de EGOI' },
           { src: '/egoi/FotoEGOI4.JPG', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI5.JPG', alt: 'Team NL op de EGOI' },
+          { src: '/egoi/FotoEGOI5.jpg', alt: 'Team NL op de EGOI' },
           { src: '/egoi/FotoEGOI1.JPG', alt: 'Team NL op de EGOI' }
         ].map(({ src, alt }) => (
             <Image
