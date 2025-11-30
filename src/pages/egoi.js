@@ -1,14 +1,6 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
-import { Box, Container, Heading, SimpleGrid, Text, Stack,
-    Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
-} from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Text, Stack,Table,Thead, Tbody,Tr,Th,Td,TableContainer,} from '@chakra-ui/react'
 
 const Egoi = () => {
   return (
@@ -31,8 +23,6 @@ const Egoi = () => {
             De ervaringen van You-Han (Lenka), deelneemster aan EGOI 2023/2024/2025:<br />
             “Eerlijk gezegd: toen ik voor het eerst meedeed aan girls@informaticaolympiade.nl had ik nooit gedacht dat ik ooit naar de EGOI zou gaan. Ik vroeg me zelfs af of ik wel goed genoeg was in programmeren. Gelukkig kreeg ik op elke stap van de cursus tot de EGOI geweldige steun van de trainsters en mede-deelneemsters. Ik ben trots dat ik ben gegroeid van een complete beginner in de programmeertaal C++ naar het vertegenwoordigen van Nederland bij de EGOI en het behalen van de 6e plek in de NIO-finale. Proberen is de enige manier om erachter te komen hoe ver je kunt komen! Dus, voor elke leerling die van puzzels, logische uitdagingen en het oplossen van problemen houdt: Doe mee aan deze cursus!”
           </Text>
-        </Container>
-      </Box>
 
       <Box>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
@@ -60,7 +50,7 @@ const Egoi = () => {
         </SimpleGrid>
       </Box>
 
-      <Box as="section" textAlign="center" px={{ base: 4, md: 0 }} py={12} bg="purple.50">
+      <Box as="section" textAlign="center" px={{ base: 4, md: 0 }} py={12} bg="orange.50">
         <Heading as="h2" size="lg" mb={8}>
           De EGOI teams van de afgelopen jaren
         </Heading>
@@ -86,7 +76,12 @@ const Egoi = () => {
           />
         ))}
       </Box>
+      </Container>
+      </Box>
+
     </Layout>
+
+
   )
 }
 

@@ -14,29 +14,6 @@ import { ColorModeImage } from '@/components/ColorModeImage'
 import { Image, Link } from '@/components/mdx'
 import { footerItems } from '@/data/footer-items'
 
-const SocialButton = ({ children, label, href }) => {
-  return (
-    <Button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      rounded={'full'}
-      w={12}
-      h={12}
-      cursor={'pointer'}
-      as={'a'}
-      href={href}
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
-      _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </Button>
-  )
-}
 
 const ListHeader = ({ children }) => {
   return (
@@ -64,7 +41,7 @@ export const Footer = () => {
                 w={32}
                 lightSrc={'/assets/logo.png'}
                 darkSrc={'/assets/logo.png'}
-                alt={'Girls @ Informatica Olympiade logo logo'}
+                alt={'Girls @ Informatica Olympiade logo'}
               />
             </Box>
 

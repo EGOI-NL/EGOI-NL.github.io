@@ -28,8 +28,8 @@ export const footerItems = {
 
   kolom3: [
     {
-      label: 'Team',
-      href: '/team',
+      label: 'Contact',
+      href: '/contact',
     },
     {
       label: 'Informatica Olympiade',

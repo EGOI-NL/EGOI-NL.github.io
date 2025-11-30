@@ -3,6 +3,6 @@ export const menuItems = [
   { label: 'EGOI', href: '/egoi' },
   { label: 'In het nieuws', href: '/nieuws' },  
   { label: 'Sponsors', href: '/#funders' },
-  { label: 'Team', href: '/team' },
+  { label: 'Contact', href: '/contact' },
   { label: 'Informatica olympiade', href: 'https://www.informaticaolympiade.nl' },
 ]

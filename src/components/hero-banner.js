@@ -1,6 +1,6 @@
-import { Box, Button, Container, Heading, Stack, Text } from '@chakra-ui/react'
-
-import { Image, Link } from '@/components/mdx'
+import { Box, Button, Container, Heading, Link as ChakraLink, HStack, Stack, Text } from '@chakra-ui/react'
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { Image } from '@/components/mdx'
 
 export const HeroBanner = () => {
   return (
@@ -44,32 +44,54 @@ export const HeroBanner = () => {
             </Text>
           </Stack>
           <Stack flex={1} spacing={{ base: 10, md: 20 }}>
-            {
-              <Image
-                src={'/assets/Programmeercursus.png'}
-                alt='Drie meisjes die programmeren.'
-                objectFit='contain'
-              ></Image>
-            }
+            <Image
+              src={'/assets/Programmeercursus.png'}
+              alt='Drie meisjes die programmeren.'
+              objectFit='contain'
+            />
 
-            <Stack
-                spacing={{ base: 4, sm: 6 }}
-                justify={'center'}
-                direction={{ base: 'column', sm: 'row' }}
+            <HStack spacing={4} justify="center" pt={6}>
+              <Button
+                as={ChakraLink}
+                variant="outline"
+                colorScheme="orange"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Button
-                  useExternalIcon
-                  as={Link}
-                  variant={'outline'}
-                  colorScheme={'orange'}
-                  href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'
-                >
-                  Meld je aan!
-                </Button>
-              </Stack>
-            </Stack>
+                Meld je aan!
+              </Button>
+
+              <Button
+                as={ChakraLink}
+                href="https://www.linkedin.com/company/egoi-nederland"
+                target="_blank"
+                rel="noopener noreferrer"
+                leftIcon={<FaLinkedin />}
+                bg="#0A66C2"
+                color="white"
+                _hover={{ bg: '#004182' }}
+              >
+                LinkedIn
+              </Button>
+
+              <Button
+                as={ChakraLink}
+                href="https://www.instagram.com/egoi_nl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                leftIcon={<FaInstagram />}
+                bg="#E1306C"
+                color="white"
+                _hover={{ bg: '#AD255F' }}
+              >
+                Instagram
+              </Button>
+            </HStack>
+          </Stack>
         </Stack>
       </Container>
     </Box>
   )
 }
+
