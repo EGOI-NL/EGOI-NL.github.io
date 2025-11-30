@@ -2,7 +2,7 @@ export const Funders = [
   {
     name: 'Jane Street',
     logo_light: '/funders-logos/janestreet.png',
-    logo_dark: '/funders-logos/janestreet_dark.png',
+    logo_dark: '/funders-logos/Janestreet_dark.png',
     url: 'https://www.janestreet.com/',
     jaren: '2026'
   },
