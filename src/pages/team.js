@@ -1,7 +1,5 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
-import { TeamMember } from '@/components/team-member'
-import { OprichterTeamMembers, BestuurTeamMembers, OverigTeamMembers } from '@/data/team-members'
 import { Box, Container, Heading, SimpleGrid, Text, Stack } from '@chakra-ui/react'
 
 const Team = () => {

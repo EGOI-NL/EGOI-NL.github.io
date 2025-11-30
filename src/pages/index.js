@@ -1,6 +1,4 @@
 import { EGOI, HeroBanner, Funders, CursusIntro } from '@/components'
-import { VideoDemo } from '@/components/video-demo'
-
 import { Layout } from '@/components/layout'
 
 export default function IndexPage() {

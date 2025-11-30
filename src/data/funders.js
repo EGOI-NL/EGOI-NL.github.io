@@ -1,5 +1,12 @@
 export const Funders = [
   {
+    name: 'Jane Street',
+    logo_light: '/funders-logos/janestreet.png',
+    logo_dark: '/funders-logos/janestreet.png',
+    url: 'https://www.janestreet.com/',
+    jaren: '2026'
+  },
+  {
     name: 'Betadecanen',
     logo_light: '/funders-logos/Betadecanen-nl.png',
     logo_dark: '/funders-logos/Betadecanen-nl.png',
@@ -16,7 +23,7 @@ export const Funders = [
   {
     name: 'Accenture',
     logo_light: '/funders-logos/Accenture_logo.png',
-    logo_dark: '/funders-logos/Accenture_logo_inverted.png',
+    logo_dark: '/funders-logos/Accenture_logo.png',
     url: 'https://www.accenture.com/nl-en',
     jaren: '2021-2022'
   },

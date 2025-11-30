@@ -1,7 +1,5 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
-import { TeamMember } from '@/components/team-member'
-import { OprichterTeamMembers, BestuurTeamMembers, OverigTeamMembers } from '@/data/team-members'
 import { Box, Container, Heading, SimpleGrid, Text, Stack,
     Table,
   Thead,
@@ -25,7 +23,7 @@ const Cursus = () => {
           </Heading>
 
           <Text fontSize={'lg'} py={10}>
-            Ongeveer vier keer per jaar organiseren we een cursusdag. De volgende cursusdag is een programmeerweekend. Het programmeerweekend begint op vrijdag om 10:00 en eindigt zaterdag om 15:00. Er komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer en dat is helemaal goed. Overdag programmeren we en in de avond is er tijd voor gezelligheid en spelletjes. De cursus is gratis. Wij zorgen voor eten, drinken en een slaapplek. En we helpen je als nodig met vrijdag vrij vragen op school.
+            Ongeveer vier keer per jaar organiseren we een cursusdag. De volgende cursusdag is een programmeerweekend op vrijdag 16 januari en zaterdag 17 januari 2026. Het programmeerweekend begint op vrijdag om 10:00 en eindigt zaterdag om 15:00. Er komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer en dat is helemaal goed. Overdag programmeren we en in de avond is er tijd voor gezelligheid en spelletjes. De cursus is gratis. Wij zorgen voor eten, drinken en een slaapplek. En we helpen je als nodig met vrijdag vrij vragen op school.
 
           </Text>
 
@@ -96,15 +94,15 @@ const Cursus = () => {
 
                 <Tr bg="blue.50">
                   <Td>12 t/m 18 mei 2026</Td>
-                  <Td>EGOI 2026 in Italië.</Td>
+                  <Td>European Girls Olympiad in Informatics 2026 in Italië.</Td>
                 </Tr>
                 <Tr>
                   <Td>26 t/m 28 juni 2026</Td>
-                  <Td>WEOI 2026 in Luxemburg.</Td>
+                  <Td>Western European Olympiad in Informatics 2026 in Luxemburg.</Td>
                 </Tr>
                 <Tr bg="blue.50">
                   <Td>9 t/m 16 aug 2026</Td>
-                  <Td>IOI 2026 in Uzbekistan.</Td>
+                  <Td>International Olympiad in Informatics 2026 in Uzbekistan.</Td>
                 </Tr>                
               </Tbody>
             </Table>
