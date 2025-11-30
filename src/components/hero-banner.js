@@ -5,13 +5,14 @@ import { Image } from '@/components/mdx'
 export const HeroBanner = () => {
   return (
     <Box as='section'>
-      <Container maxW='container.lg' pt={24} pb={2} centerContent>
-        <Stack
-          align={'center'}
-          spacing={{ base: 8, md: 10 }}
-          justify={'center'}
-          direction={{ base: 'column', md: 'row' }}
-        >
+        <Container maxW='container.lg' pt={24} pb={2} centerContent px={{ base: 4, md: 0 }}>
+          <Stack
+            align={'center'}
+            spacing={{ base: 8, md: 10 }}
+            justify={'center'}
+            direction={{ base: 'column', md: 'row' }}
+            w='full'
+          >
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
               lineHeight={1.1}
@@ -43,11 +44,13 @@ export const HeroBanner = () => {
                 Als je dat leuk vindt dan helpen we je verder met competitief programmeren, zodat je kans kunt maken om mee te doen aan de European Girls Olympiad in Informatics.
             </Text>
           </Stack>
-          <Stack flex={1} spacing={{ base: 10, md: 20 }}>
+          <Stack flex={1} spacing={{ base: 10, md: 20 }} maxW={{ base: '100%', md: 'auto' }}>
             <Image
               src={'/assets/Programmeercursus.png'}
               alt='Drie meisjes die programmeren.'
               objectFit='contain'
+              maxW='100%'
+              height='auto'
             />
 
             <HStack spacing={4} justify="center" pt={6}>
