@@ -43,7 +43,7 @@ const Contact = () => {
           {/* Socials - sectie */}
           <Box textAlign="center" mb={12}>
             <Text fontSize="lg" mb={4} fontWeight="semibold">
-              Je kan ons vinden op:
+              Je kan ons ook vinden op:
             </Text>
             <HStack spacing={6} justify="center">
               <Button
@@ -79,7 +79,7 @@ const Contact = () => {
           {/* Tekst boven afbeelding */}
           <Box textAlign="center" mb={6}>
             <Text fontSize="xl" fontWeight="bold">
-              De vrijwilligers van Girls @ Informatica Olympiade
+              Het team
             </Text>
           </Box>
 
@@ -90,9 +90,9 @@ const Contact = () => {
               alt='De vrijwilligers van Girls @ Informatica Olympiade'
               objectFit='contain'
               mt={2}
-              maxW="800px"      // iets grotere breedte
-              width="100%"      // volledig binnen container
-              maxH="600px"      // grotere hoogte indien mogelijk
+              maxW="800px"      
+              width="100%"      
+              maxH="600px"      
             />
           </Stack>
         </Container>
