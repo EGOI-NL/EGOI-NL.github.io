@@ -4,8 +4,8 @@ import '@fontsource-variable/inter'
 
 // color mode config
 const config = {
-  initialColorMode: 'system',
-  useSystemColorMode: true,
+  initialColorMode: 'light',
+  useSystemColorMode: false,
 }
 
 const fonts = {
