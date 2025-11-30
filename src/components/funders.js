@@ -27,13 +27,12 @@ export const Funders = () => {
           <Text fontSize={'lg'}>
             Girls @ Informatica Olympiade wordt/werd ondersteund door
           </Text>
-
-          <Grid
-            templateColumns={`repeat(${funders.length}, minmax(auto, max-content))`}
-            gap={6}
-            my={4}
-            justifyContent='center'
-          >
+            <Grid
+              templateColumns={{ base: 'repeat(2, 1fr)', md: `repeat(${funders.length}, minmax(auto, max-content))` }}
+              gap={6}
+              my={4}
+              justifyContent='center'
+            >
             {funders.map((funder, index) => (
               <Tooltip key={index} label={funder.name}>
                 <GridItem
