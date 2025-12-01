@@ -1,4 +1,4 @@
 export function getRootURL() {
-  let url = 'https://kinderklimaatconcertdag.nl'
+  let url = 'https://girls.informaticaolympiade.nl'
   return url
 }
