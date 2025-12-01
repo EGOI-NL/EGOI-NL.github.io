@@ -4,7 +4,7 @@ export const Funders = [
     logo_light: '/funders-logos/janestreet.png',
     logo_dark: '/funders-logos/Janestreet_dark.png',
     url: 'https://www.janestreet.com/',
-    jaren: '2026'
+    jaren: '2024-2025'
   },
   {
     name: 'Betadecanen',
