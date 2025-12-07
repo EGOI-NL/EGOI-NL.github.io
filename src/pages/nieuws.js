@@ -1,14 +1,6 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
-import { Box, Container, Heading, SimpleGrid, Text, Stack,
-    Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
-} from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Text, Stack,Table,head,Tbody,Tr,Th,Td,TableContainer,} from '@chakra-ui/react'
 
 const Nieuws = () => {
   return (
@@ -37,15 +29,15 @@ const Nieuws = () => {
             mx="auto"
             maxW="100%"
           >
-            <Image
-              src={src}
-              alt={alt}
-              objectFit="cover"
-              width="100%"
-              height="auto"             
-              maxH="400px"              
-              display="block"
-            />
+          <Image
+            src={src}
+            alt={alt}
+            objectFit={{ base: 'contain', md: 'cover' }}
+            width="100%"
+            height="auto"
+            maxH={{ base: 'none', md: '400px' }}
+            display="block"
+          />
           </Box>
         ))}
       </SimpleGrid>

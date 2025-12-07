@@ -29,8 +29,8 @@ export const CursusIntro = () => {
             </Text>
 
             <Text fontSize={'lg'}>
-              Op een cursusdag komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer. Dat maakt niet uit: iedereen werkt op haar eigen niveau en tempo. Je werkt alleen of samen aan de opdrachten in ons lesmateriaal.
-De cursus is gratis. Wij zorgen voor snacks, drinken en een lunch.
+              Op een cursusdag komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer. Dat maakt niet uit: iedereen werkt op haar eigen niveau en tempo. Je werkt alleen of samen aan de opdrachten in ons lesmateriaal. Ook werken er vaak groepjes aan de opgaves van de Nederlandse Informatica Olympiade.
+              De cursus is gratis. Wij zorgen voor snacks, drinken en een lunch. Ook organiseren we een gezellige activiteit tijdens de lunchpauze.
             </Text>
           </Stack>
           <Stack flex={2} spacing={{ base: 10, md: 20 }}>

@@ -35,6 +35,17 @@ const Cursus = () => {
                 </Link>{' '}
           </Text>
 
+          <Image
+            src="/cursus/puzzel.png"
+            alt="Aanmelden voor de cursus"
+            mx="auto"
+            my={6}
+            borderRadius="md"
+            shadow="md"
+            maxW="800px"    
+            width="100%"  
+          />          
+
           <Button
             as={ChakraLink}
             variant="outline"
@@ -42,7 +53,13 @@ const Cursus = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform"
             target="_blank"
             rel="noopener noreferrer"
-             mt={6} 
+            size="xl" 
+            px={12}      
+            py={8}                
+            fontSize="xl"    
+            mx="auto"
+            display="block"
+            maxW="200px"             
           >
             Meld je aan!
           </Button>

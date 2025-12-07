@@ -39,10 +39,10 @@ export const HeroBanner = () => {
                 We zijn onderdeel van de stichting informatica olympiade.
 
                 Een aantal keer per jaar geven we een gratis programmeercursus voor meisjes op de middelbare school.
-                Alle niveaus zijn welkom.
+                Alle niveaus zijn welkom, of je nu beginner bent of al vergevorderd.
             </Text>
             <Text fontSize={'lg'}>
-                Tijdens de cursus leer je programmeren in C++.
+                Tijdens de cursus leer je programmeren in C++. Ook leer je over algoritmes waarmee je uitdagende puzzels oplost.
 
                 Als je dat leuk vindt dan helpen we je verder met competitief programmeren, zodat je kans kunt maken om mee te doen aan de European Girls Olympiad in Informatics.
             </Text>
