@@ -20,7 +20,6 @@ import { Layout } from '@/components/layout'
 import { Link } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
 import { getSortedPostsMetadata } from '@/lib/posts'
-import { generateRssFeed } from '@/lib/rss-feed'
 
 const SinglePost = ({ page }) => {
   const date = new Date(page.date)
@@ -101,7 +100,6 @@ export default function Blog({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsMetadata()
-  generateRssFeed(allPostsData)
   return {
     props: {
       allPostsData,
