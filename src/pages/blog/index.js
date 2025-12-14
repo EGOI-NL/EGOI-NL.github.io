@@ -57,19 +57,6 @@ const SinglePost = ({ page }) => {
           </Text>
         </Box>
         <Spacer />
-        <Box>
-          <AvatarGroup size={'lg'}>
-            {page.authors.map((author) => {
-              return (
-                <Avatar
-                  key={author.name}
-                  src={`https://github.com/${author.github}.png`}
-                  name={author.name}
-                />
-              )
-            })}
-          </AvatarGroup>
-        </Box>
       </Stack>
     </motion.div>
   )

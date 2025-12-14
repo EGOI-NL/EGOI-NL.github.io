@@ -58,32 +58,6 @@ export default function Post({ source, frontmatter, postId }) {
                 {formatDate(date)} ({distanceToNow(date)})
               </Text>
 
-              <Wrap spacing='20px'>
-                {frontmatter.authors.map((author) => {
-                  return (
-                    <WrapItem key={author.name}>
-                      <Flex
-                        as={Link}
-                        href={`https://github.com/${author.github}`}
-                        align={'center'}
-                        my={2}
-                        direction={'column'}
-                        _hover={{
-                          textDecoration: 'none',
-                        }}
-                      >
-                        <Avatar
-                          src={`https://github.com/${author.github}.png`}
-                          name={author.name}
-                          my={2}
-                          size={'lg'}
-                        />
-                        <Text fontWeight={600}>{author.name}</Text>
-                      </Flex>
-                    </WrapItem>
-                  )
-                })}
-              </Wrap>
               <Divider my={2} />
             </VStack>
             <br></br>
