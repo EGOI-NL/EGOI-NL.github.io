@@ -3,49 +3,53 @@ title: 'Programmeerweekend 16 & 17 januari 2026'
 date: '2025-12-21'
 authors:
   - name: Judith helgers
-summary: 'Op vrijdag 16 januari en zaterdag 17 januari organiseren we een programmeerweekend voor meisjes op de middelbare school.'
+
 ---
 
 
-Wat gaan we doen?
+## Wat gaan we doen?
 
-Vrijdag 16 januari
-Om 11:00 uur starten we bij het bedrijf Harvest in Driebergen. We gaan de hele dag samen aan de slag met programmeren en werken aan leuke opdrachten. Harvest zal ons welkom heten en en zorgt voor snacks en lunch 🍎🥪.
+### Vrijdag 16 januari
+Om 11:00 uur starten we bij het bedrijf Harvest in Driebergen. We gaan de hele dag samen programmeren en aan de slag met leuke opdrachten. Harvest zal ons welkom heten en en zorgt voor snacks en lunch 🍎🥪.
+
 Harvest is een bedrijf dat postmasterprogramma's organiseert voor jong talent zodat zij zich kunnen ontplooien als technisch leiders van de toekomst.
-![Harvest](/assets/harvest.png)
+![Harvest](/blog/harvest.png)
+
+Rond 17:00 uur vertrekken we naar onze slaaplocatie: het Boshuis in Driebergen 🌲. Daar eten we, spelen we spelletjes en blijven we slapen.
+
+Het is natuurlijk ook mogelijk om maar één van de twee dagen te komen en niet te blijven slapen. Dan vertrek je om 17:00 of na het avondeten naar huis.
+
+Het boshuis is een prachtig gelegen groepsaccommodatie en heeft een hoop ruimte. Op het terrein is er een airtrampoline, schommel, tafeltennistafel en voetbaltafel. 
+
+![Het boshuis](/blog/boshuis_samen.png)
+
+### Zaterdag 17 januari
+Na een lekker ontbijt ☕🥐 gaan we weer verder met de cursus. We blijven in het Boshuis. We programmeren tot ongeveer 14:00 uur, waarna het weekend wordt afgesloten.
 
 
-Rond 17:00 uur vertrekken we naar onze slaaplocatie: het boshuis in Driebergen 🌲. Daar eten we samen, spelen we spelletjes en blijven we slapen.
-Het boshuis is van de scouting en heeft een hoop 
+## Aanmelden
 
+Zoals altijd is de cursus gratis en zorgen wij voor snacks, lunch, diner en ontbijt. 
 
-![Het boshuis](/assets/boshuis.png)
-![De reacreatiezaal](/assets/recreatiezaal.png)
-![De slaapzaal](/assets/slaapzaal.png)
+Alle niveaus zijn welkom – of je nu net begint met programmeren of al wat meer ervaring hebt. Het maakt ook niet uit of je al eerder aan de cursus hebt meegedaan of dat dit je eerste keer is: iedereen kan aansluiten.
 
+Zit je al in onze WhatsApp-groep? Dan hoef je je niet opnieuw aan te melden.
 
-Zaterdag 17 januari
-Na een lekker ontbijt ☕🥐 gaan we weer verder met de cursus. We programmeren tot ongeveer 14:00 uur, waarna het weekend wordt afgesloten.
+Heb je je nog niet eerder opgegeven voor de cursus? Dan kun je je aanmelden via dit [formulier](https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform).
 
-💡 Waarom meedoen?
+Vrijdag is natuurlijk een schooldag. Als je hulp nodig hebt bij het vrij vragen van deze dag op school dan helpen we je graag.
 
-Je leert programmeren op een leuke en ontspannen manier
-
-Je ontmoet andere meiden met dezelfde interesse
-
-Je krijgt een kijkje in de wereld van tech en IT
-
-En… het is helemaal gratis! 🎉
-
-Wij regelen alles: snacks, lunch, avondeten én ontbijt. Jij hoeft alleen maar nieuwsgierigheid en zin om mee te doen mee te nemen 😄
-
-
-Hoe aanmelden?
-
-Alle niveaus zijn welkom, of je nu beginner bent of al vergevorderd. 
-Zit je al in onze Whatsapp groep dan hoef je je niet opnieuw op te geven.
-
-
-Adressen?
+## Adressen
 
 Harvest: Hoofdstraat 152 in Driebergen-Rijsenburg
+
+Boshuis: Baden Powelllaan 7 in Driebergen
+
+## Wat meenemen?
+
+- Laptop met oplader
+- Slaapspullen (pyjama, tandenborstel, etc)
+- Qua bedden is er alleen een matras en kussen dus je moet zelf meenemen: slaapzak / dekbed + kussensloop en hoeslaken
+- Handdoek
+- Zaklantaarn
+- Leuke spelletjes
