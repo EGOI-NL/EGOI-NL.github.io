@@ -1,0 +1,108 @@
+import {
+  Avatar,
+  AvatarGroup,
+  Box,
+  Container,
+  Divider,
+  Heading,
+  Spacer,
+  Stack,
+  StackDivider,
+  Text,
+  useColorModeValue,
+  VStack,
+  useColorMode,
+} from '@chakra-ui/react'
+
+import { motion } from 'framer-motion'
+
+import { Layout } from '@/components/layout'
+import { Link } from '@/components/mdx'
+import { distanceToNow, formatDate } from '@/lib/date-formatting'
+import { getSortedPostsMetadata } from '@/lib/posts'
+
+const SinglePost = ({ page }) => {
+  const date = new Date(page.date)
+
+  return (
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ duration: 0.2 }}
+    >
+      <Stack
+        spacing='2'
+        align='stretch'
+        my={{ base: 5, md: 10 }}
+        direction={{ base: 'column', md: 'row' }}
+      >
+        <Box>
+          <Link href={`/blog/${page.id}`} fontSize={'xl'} fontWeight={'bold'}>
+            {page.title}
+          </Link>
+
+          <Text
+            fontSize={'sm'}
+            color={
+              useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
+            }
+            py={4}
+          >
+            {formatDate(date)} ({distanceToNow(date)})
+          </Text>
+
+          <Text noOfLines={3} py={4}>
+            {page.summary}
+          </Text>
+        </Box>
+        <Spacer />
+      </Stack>
+    </motion.div>
+  )
+}
+
+export default function Blog({ allPostsData }) {
+  return (
+    <Layout
+      title={'Blog | Girls @ Informatica Olympiade'}
+      url={`/blog`}
+    >
+      <Box as='section'>
+        <Container maxW='container.lg' py={20}>
+          <Heading as='h1' size='2xl' textAlign={'center'} my={4}>
+            Blog
+          </Heading>
+          <Text
+            color={useColorModeValue('gray.800', 'white')}
+            fontSize={'lg'}
+            textAlign={'center'}
+          >
+            Nieuws en updates over de Girls @ Informatica Olympiade
+          </Text>
+
+          <Divider my={4} borderColor='gray.200' />
+
+          <VStack
+            divider={<StackDivider borderColor='gray.200' />}
+            spacing={-4}
+            align='stretch'
+          >
+            {allPostsData.map((page) => {
+              return <SinglePost key={page.id} page={page} />
+            })}
+          </VStack>
+          <Divider my={2} borderColor='gray.200' />
+        </Container>
+      </Box>
+    </Layout>
+  )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsMetadata()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
+}
