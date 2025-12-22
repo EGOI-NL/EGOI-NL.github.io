@@ -10,14 +10,14 @@ authors:
 ## Wat gaan we doen?
 
 ### Vrijdag 16 januari
-Om 11:00 uur starten we bij het bedrijf Harvest in Driebergen. We gaan de hele dag samen programmeren en aan de slag met leuke opdrachten. Harvest zal ons welkom heten en en zorgt voor snacks en lunch 🍎🥪.
+Om 11:00 uur starten we bij het bedrijf [Harvest](https://harvest.nl/) in Driebergen. We gaan de hele dag samen programmeren en aan de slag met leuke opdrachten. Harvest zal ons welkom heten en en zorgt voor snacks en lunch 🍎🥪.
 
 Harvest is een bedrijf dat postmasterprogramma's organiseert voor jong talent zodat zij zich kunnen ontplooien als technisch leiders van de toekomst.
 ![Harvest](/blog/harvest.png)
 
-Rond 17:00 uur vertrekken we naar onze slaaplocatie: het Boshuis in Driebergen 🌲. Daar eten we, spelen we spelletjes en blijven we slapen.
+Rond 17:00 uur vertrekken we naar onze slaaplocatie: het [Boshuis](https://www.ymcakampeercentra.nl/driebergen/) in Driebergen 🌲. Daar eten we, spelen we spelletjes en blijven we slapen.
 
-Het is natuurlijk ook mogelijk om maar één van de twee dagen te komen en niet te blijven slapen. Dan vertrek je om 17:00 of na het avondeten naar huis.
+Het is natuurlijk ook mogelijk om maar één van de twee dagen te komen en niet te blijven slapen. Dan vertrek je om 17:00 of na het avondeten naar huis. En het is ook mogelijk om beide dagen te komen zonder te blijven slapen.
 
 Het boshuis is een prachtig gelegen groepsaccommodatie en heeft een hoop ruimte. Op het terrein is er een airtrampoline, schommel, tafeltennistafel en voetbaltafel. 
 
