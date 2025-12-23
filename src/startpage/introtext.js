@@ -2,7 +2,7 @@ import { Box, Button, Container, Heading, Link as ChakraLink, HStack, Stack, Tex
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { Image } from '@/components/mdx'
 
-export const HeroBanner = () => {
+export const IntroText = () => {
   return (
     <Box as='section'>
         <Container maxW='container.lg' pt={24} pb={2} centerContent px={4}>

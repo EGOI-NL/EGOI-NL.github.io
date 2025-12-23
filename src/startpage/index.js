@@ -1,0 +1,7 @@
+export { Banner } from '@/components/banner'
+export { Funders } from '@/startpage/funders'
+export { CursusIntro} from '@/startpage/cursus_intro'
+export { EGOI } from '@/startpage/egoi_intro'
+export { Footer } from '@/components/footer'
+export { Header } from '@/components/header'
+export { IntroText } from '@/startpage/introtext'

@@ -1,4 +1,4 @@
-import { EGOI, HeroBanner, Funders, CursusIntro } from '@/components'
+import { EGOI, IntroText, Funders, CursusIntro } from '@/startpage'
 import { Layout } from '@/components/layout'
 
 export default function IndexPage() {
@@ -11,7 +11,7 @@ export default function IndexPage() {
       }
       enableBanner
     >
-      <HeroBanner />
+      <IntroText />
       <CursusIntro />
       <EGOI />
       <Funders />

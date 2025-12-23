@@ -96,7 +96,7 @@ const Cursus = () => {
 
                 <Tr bg={orangeBg}>
                   <Td whiteSpace="normal" wordBreak="break-word">Vrijdag 16 en zaterdag 17 jan 2026</Td>
-                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsweekend (van vrijdag 10:00 tot zaterdag 15:00) in het Boshuis in Driebergen.</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Trainingsweekend (van vrijdag 11:00 tot zaterdag 14:00) in Driebergen Rijssenburg.</Td>
                 </Tr>
 
                 <Tr>
