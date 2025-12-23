@@ -6,6 +6,10 @@ authors:
 
 ---
 
+Op vrijdag 16 januari en zaterdag 17 januari organiseren we een programmeerweekend. 
+Ben je een enthousiaste middelbare scholier met een liefde voor logisch denken en programmeren? 
+Wil je de kans krijgen om Nederland te vertegenwoordigen op de European Girls’ Olympiad in Informatics (EGOI)?
+Kom dan zeker naar ons weekend!
 
 ## Wat gaan we doen?
 
