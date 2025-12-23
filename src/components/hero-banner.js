@@ -5,15 +5,12 @@ import { Image } from '@/components/mdx'
 export const HeroBanner = () => {
   return (
     <Box as='section'>
-        <Container maxW='container.lg' pt={24} pb={2} centerContent px={{ base: 4, md: 0 }}>
+        <Container maxW='container.lg' pt={24} pb={2} centerContent px={4}>
           <Stack
-            align={'center'}
             spacing={{ base: 8, md: 10 }}
-            justify={'center'}
             direction={{ base: 'column', md: 'row' }}
-            w='full'
           >
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Stack flex={1} spacing={{ base: 8, md: 10 }}>
             <Heading
               lineHeight={1.1}
               fontWeight={600}
