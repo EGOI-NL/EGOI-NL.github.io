@@ -30,7 +30,9 @@ const Contact = () => {
             <Button
               as={ChakraLink}
               variant="outline"
-              colorScheme="orange"
+              bg="orange.500"
+              color="white"
+              _hover={{ bg: 'orange.800' }}
               href="https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,9 +92,9 @@ const Contact = () => {
               alt='De vrijwilligers van Girls @ Informatica Olympiade'
               objectFit='contain'
               mt={2}
-              maxW="800px"      
-              width="100%"      
-              maxH="600px"      
+              maxW="800px"
+              width="100%"
+              maxH="600px"
             />
           </Stack>
         </Container>

@@ -4,7 +4,7 @@ import { Box, Button, Container, Heading, Link as ChakraLink, SimpleGrid, Text, 
 import { useColorModeValue } from '@chakra-ui/react'
 
 const Cursus = () => {
-  const orangeBg = useColorModeValue('orange.100', 'orange.500'); 
+  const orangeBg = useColorModeValue('orange.100', 'orange.500');
   return (
     <Layout
       title={'Cursus'}
@@ -42,29 +42,34 @@ const Cursus = () => {
             my={6}
             borderRadius="md"
             shadow="md"
-            maxW="800px"    
-            width="100%"  
-          />          
+            maxW="800px"
+            width="100%"
+          />
 
           <Button
             as={ChakraLink}
             variant="outline"
-            colorScheme="orange"
+            bg="orange.500"
+            color="white"
+            _hover={{ bg: 'orange.800' }}
             href="https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            size="xl" 
-            px={12}      
-            py={8}                
-            fontSize="xl"    
+            size="xl"
+            px={12}
+            py={8}
+            fontSize="xl"
             mx="auto"
-            display="block"
-            maxW="200px"             
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+            maxW="800px"
           >
             Meld je aan!
           </Button>
 
-          
+
           <TableContainer w="100%" pt={10}>
             <Table variant="simple" size="md" tableLayout="fixed">
               <Thead>
@@ -140,7 +145,7 @@ const Cursus = () => {
                 <Tr bg={orangeBg}>
                   <Td>9 t/m 16 aug 2026</Td>
                   <Td>International Olympiad in Informatics 2026 in Uzbekistan.</Td>
-                </Tr>                
+                </Tr>
               </Tbody>
             </Table>
           </TableContainer>
