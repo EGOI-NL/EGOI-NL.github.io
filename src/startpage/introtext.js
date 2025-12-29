@@ -53,7 +53,7 @@ export const IntroText = () => {
               height='auto'
             />
 
-            <HStack spacing={4} justify="center" pt={6}>
+            <Stack spacing={4} direction={{ base: 'column', md: 'row' }} align="center" justify="center" pt={6}>
               <Button
                 as={ChakraLink}
                 variant="outline"
@@ -61,6 +61,9 @@ export const IntroText = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
+                flex="1 1 auto"
+                minW={0}
+                w={{ base: '100%', md: 'auto' }}
               >
                 Meld je aan!
               </Button>
@@ -74,6 +77,9 @@ export const IntroText = () => {
                 bg="#0A66C2"
                 color="white"
                 _hover={{ bg: '#004182' }}
+                flex="1 1 auto"
+                minW={0}
+                w={{ base: '100%', md: 'auto' }}
               >
                 LinkedIn
               </Button>
@@ -87,10 +93,13 @@ export const IntroText = () => {
                 bg="#E1306C"
                 color="white"
                 _hover={{ bg: '#AD255F' }}
+                flex="1 1 auto"
+                minW={0}
+                w={{ base: '100%', md: 'auto' }}
               >
                 Instagram
               </Button>
-            </HStack>
+            </Stack>
           </Stack>
         </Stack>
       </Container>
