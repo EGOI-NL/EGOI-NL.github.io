@@ -17,7 +17,8 @@ const Cursus = () => {
           </Heading>
 
           <Text fontSize={'lg'} py={10}>
-            Ongeveer vier keer per jaar organiseren we een cursusdag. De volgende cursusdag is een programmeerweekend op vrijdag 16 januari en zaterdag 17 januari 2026. Het programmeerweekend begint op vrijdag om 10:00 en eindigt zaterdag om 15:00. Er komen meestal zo'n 15 tot 25 leerlingen uit het hele land. Sommigen doen al langer mee, anderen komen voor de eerste keer en dat is helemaal goed. Overdag programmeren we en in de avond is er tijd voor gezelligheid en spelletjes. De cursus is gratis. Wij zorgen voor eten, drinken en een slaapplek. En we helpen je als nodig met vrijdag vrij vragen op school.
+            Ongeveer vier keer per jaar organiseren we een cursusdag.
+            Dit kan op een vrijdag, zaterdag of zondag zijn. Soms is het zelfs een tweedaags evenement met een overnachting in een jeugdherberg. Meestal zijn de cursusdagen in Utrecht, maar er is geen vaste locatie - ze kunnen door het hele land plaatsvinden.
 
           </Text>
 
