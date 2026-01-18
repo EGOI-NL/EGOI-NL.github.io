@@ -9,7 +9,7 @@ export default function IndexPage() {
       card={
         'assets/logo_no-text.png'
       }
-      enableBanner
+      // enableBanner
     >
       <IntroText />
       <CursusIntro />
