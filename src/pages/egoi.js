@@ -55,6 +55,7 @@ const Egoi = () => {
           De EGOI teams van de afgelopen jaren
         </Heading>
         {[
+          { src: '/egoi/egoi-team-2026.png', alt: 'Het 2026 EGOI-NL team' },
           { src: '/egoi/egoi-team-2025.png', alt: 'Het 2025 EGOI-NL team' },
           { src: '/egoi/egoi-team-2024.png', alt: 'Het 2024 EGOI-NL team' },
           { src: '/egoi/egoi-team-2023.png', alt: 'Het 2023 EGOI-NL team' },
