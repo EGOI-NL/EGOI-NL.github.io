@@ -1,5 +1,5 @@
 ---
-title: 'Programmeerweekend 16 & 17 januari 2026'
+title: 'Aankondiging programmeerweekend januari 2026'
 date: '2025-12-21'
 authors:
   - name: Judith helgers
