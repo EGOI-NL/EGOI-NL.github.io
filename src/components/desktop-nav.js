@@ -25,7 +25,7 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 fontWeight={'bold'}
                 color={'orange.300'}
                 textAlign="center"
-                fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
+                fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
                 _hover={{
                   textDecoration: 'none',
                   color: 'orange.100',
