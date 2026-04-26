@@ -29,12 +29,13 @@ const SinglePost = ({ page }) => {
       transition={{ duration: 0.2 }}
     >
       <Stack
-        spacing='2'
-        align='stretch'
-        my={{ base: 5, md: 10 }}
+        spacing='1'
+        align='center'
+        my={{ base: 2, md: 4 }}
         direction={{ base: 'column', md: 'row' }}
+        justify='center'
       >
-        <Box>
+        <Box textAlign='center' w='100%'>
           <Link href={`/blog/${page.id}`} fontSize={'xl'} fontWeight={'bold'}>
             {page.title}
           </Link>
@@ -42,12 +43,12 @@ const SinglePost = ({ page }) => {
           <Text
             fontSize={'sm'}
             color={'gray.600'}
-            py={4}
+            py={1}
           >
             {formatDate(date)} ({distanceToNow(date)})
           </Text>
 
-          <Text noOfLines={3} py={4}>
+          <Text noOfLines={3} py={1}>
             {page.summary}
           </Text>
         </Box>
@@ -80,7 +81,7 @@ export default function Blog({ allPostsData }) {
 
           <VStack
             divider={<StackDivider borderColor='gray.200' />}
-            spacing={-4}
+            spacing={0}
             align='stretch'
           >
             {allPostsData.map((page) => {
