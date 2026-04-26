@@ -9,9 +9,7 @@ import {
   Stack,
   StackDivider,
   Text,
-  useColorModeValue,
   VStack,
-  useColorMode,
 } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion'
@@ -43,9 +41,7 @@ const SinglePost = ({ page }) => {
 
           <Text
             fontSize={'sm'}
-            color={
-              useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
-            }
+            color={'gray.600'}
             py={4}
           >
             {formatDate(date)} ({distanceToNow(date)})
@@ -73,7 +69,7 @@ export default function Blog({ allPostsData }) {
             Blog
           </Heading>
           <Text
-            color={useColorModeValue('gray.800', 'white')}
+            color={'gray.800'}
             fontSize={'lg'}
             textAlign={'center'}
           >

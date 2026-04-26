@@ -1,10 +1,9 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
 import { Box, Button, Container, Heading, Link as ChakraLink, SimpleGrid, Text, Stack,Table,Thead,Tbody,Tr,Th,Td,TableContainer,} from '@chakra-ui/react'
-import { useColorModeValue } from '@chakra-ui/react'
 
 const Cursus = () => {
-  const orangeBg = useColorModeValue('orange.100', 'orange.500');
+  const orangeBg = 'orange.100';
   return (
     <Layout
       title={'Cursus'}

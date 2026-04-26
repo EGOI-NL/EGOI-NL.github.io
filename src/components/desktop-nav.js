@@ -9,7 +9,6 @@ import {
   PopoverTrigger,
   Stack,
   Text,
-  useColorModeValue,
 } from '@chakra-ui/react'
 
 export const DesktopNav = ({ navItems, ...props }) => {
@@ -24,12 +23,10 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 href={navItem.href ?? '/#'}
                 fontSize={'sm'}
                 fontWeight={'bold'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                color={useColorModeValue('gray.600', 'gray.200')}
+                color={'gray.600'}
                 _hover={{
                   textDecoration: 'none',
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  color: useColorModeValue('gray.800', 'white'),
+                  color: 'gray.800',
                 }}
               >
                 {navItem.label}
@@ -40,8 +37,7 @@ export const DesktopNav = ({ navItems, ...props }) => {
               <PopoverContent
                 border={0}
                 boxShadow={'xl'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={'white'}
                 p={4}
                 rounded={'xl'}
                 minW={'sm'}
@@ -68,7 +64,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+      _hover={{ bg: 'blue.50' }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>

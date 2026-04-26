@@ -10,18 +10,14 @@ import {
   IconButton,
   Image,
   Stack,
-  useColorMode,
-  useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react'
-import { ColorModeImage } from '@/components/ColorModeImage'
 import React from 'react'
 
 export const Header = () => {
   const navItems = React.useMemo(() => menuItems, [])
 
   const { isOpen, onToggle } = useDisclosure()
-  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box>
@@ -36,10 +32,7 @@ export const Header = () => {
         justify={'center'}
         css={{
           backdropFilter: 'saturate(180%) blur(5px)',
-          backgroundColor: useColorModeValue(
-            'rgba(255, 255, 255, 0.8)',
-            'rgba(26, 32, 44, 0.8)',
-          ),
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
         }}
       >
         <Container as={Flex} maxW={'container.lg'} align={'center'}>
@@ -75,10 +68,9 @@ export const Header = () => {
               alignItems={'center'}
               spacing={{ base: 2, sm: 4 }}
             >
-              <ColorModeImage
+              <Image
                 w={48}
-                lightSrc={'/assets/logo.png'}
-                darkSrc={'/assets/logo.png'}
+                src={'/assets/logo.png'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Stack>

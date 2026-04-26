@@ -10,7 +10,6 @@ import {
   VStack,
   Wrap,
   WrapItem,
-  useColorMode,
 } from '@chakra-ui/react'
 
 import { ArrowBackIcon } from '@chakra-ui/icons'
@@ -51,9 +50,7 @@ export default function Post({ source, frontmatter, postId }) {
               </Heading>
               <Text
                 fontSize={'sm'}
-                color={
-                  useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
-                }
+                color={'gray.600'}
               >
                 {formatDate(date)} ({distanceToNow(date)})
               </Text>

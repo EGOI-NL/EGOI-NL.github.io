@@ -5,12 +5,10 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useColorModeValue,
   VisuallyHidden,
   VStack,
 } from '@chakra-ui/react'
 
-import { ColorModeImage } from '@/components/ColorModeImage'
 import { Image, Link } from '@/components/mdx'
 import { footerItems } from '@/data/footer-items'
 
@@ -26,8 +24,8 @@ const ListHeader = ({ children }) => {
 export const Footer = () => {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}
+      bg={'gray.50'}
+      color={'gray.700'}
       as='footer'
     >
       <Container maxW='container.lg' my={8} centerContent>
@@ -37,10 +35,9 @@ export const Footer = () => {
         >
           <Stack spacing={6}>
             <Box>
-              <ColorModeImage
+              <Image
                 w={32}
-                lightSrc={'/assets/logo.png'}
-                darkSrc={'/assets/logo.png'}
+                src={'/assets/logo.png'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Box>
