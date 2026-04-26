@@ -12,7 +12,7 @@ Samen met hun begeleiders, Eva en Martine, reisden ze af naar Antalya. Tijdens d
 
 Hoewel er geen medailles zijn behaald, hebben de meiden een prachtig resultaat neergezet en vooral een onvergetelijke ervaring opgedaan.
 
-![EGOI2022_1](/blog/EGOI2022_1.JPG)
+![EGOI2022](/blog/EGOI2022.jpg)
 
 
 

@@ -21,13 +21,13 @@ Bij Eljakim IT waren we weer van harte welkom voor een dag vol programmeren én 
 Dit jaar vond het programmeerweekend plaats in Driebergen. Op vrijdag waren we te gast bij Harvest, waarna we de avond en zaterdag doorbrachten in het boshuis. Het was een intensief, leerzaam en vooral ontzettend leuk weekend!
 
 **28 maart 2026 – Finale Beverdag bij Universiteit Delft** <br />
-Bij de finale van de Beverwedstrijd in Delft waren we weer van de partij. Voorafgaand aan de wedstrijd gaven we een korte programmeercursus aan de deelnemers. Leuk was dat er dit keer extra meiden waren die zich enthousiast wilden aansluiten bij onze cursus in april!
+Bij de finale van de Beverwedstrijd in Delft waren we weer van de partij. Voorafgaand aan de wedstrijd gaven we een korte programmeercursus aan de deelnemers. Dit keer waren er meerdere meiden die enthousiast waren en in april zullen aansluiten bij onze cursus!
 
 **11 april 2026 – Eljakim IT in Utrecht** <br />
 De afsluitende bijeenkomst van het seizoen vond opnieuw plaats bij Eljakim IT. Er werd volop geprogrammeerd en gepuzzeld, en aan het einde van de dag vroegen de meiden al om nóg een programmeerdag dit jaar!
 
 **februari t/m mei 2026 – Training EGOI-team** <br />
-De voorbereiding op de EGOI vindt verspreid over verschillende dagen en locaties plaats, zowel fysiek als online. Het team oefent hard om straks goed beslagen ten ijs te komen.
+Het team voor de EGOI 2026 is geselecteerd en heeft in deze periode hard getraind. Ook dit jaar doet het team mee met de training van de Nederlandse Informatica Olympiade. De training vindt verspreid over verschillende dagen en locaties plaats, zowel fysiek als online. Het team oefent hard om straks klaar te zijn voor Italië.
 
 ![Cursus2025](/blog/Cursus2025.png)
 

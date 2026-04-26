@@ -43,7 +43,7 @@ const Cursus = () => {
             my={6}
             borderRadius="md"
             shadow="md"
-            maxW="800px"
+            maxW="600px"
             width="100%"
           />
 
@@ -131,8 +131,8 @@ const Cursus = () => {
                 </Tr>
 
                 <Tr>
-                  <Td whiteSpace="normal" wordBreak="break-word">Eind april/begin mei 2026</Td>
-                  <Td>Trainingsdag, waarschijnlijk in Utrecht.</Td>
+                  <Td whiteSpace="normal" wordBreak="break-word">Zaterdag 11 april 2026</Td>
+                  <Td>Trainingsdag van 10:00-16:00 bij Eljakim in Utrecht.</Td>
                 </Tr>
 
                 <Tr bg={orangeBg}>
