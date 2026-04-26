@@ -30,9 +30,9 @@ export const Header = () => {
         boxShadow={'sm'}
         zIndex={'999'}
         justify={'center'}
+        bg={'gray.600'}
         css={{
           backdropFilter: 'saturate(180%) blur(5px)',
-          backgroundColor: 'rgba(255, 255, 255, 0.8)',
         }}
       >
         <Container as={Flex} maxW={'container.lg'} align={'center'}>
@@ -46,9 +46,9 @@ export const Header = () => {
               onClick={onToggle}
               icon={
                 isOpen ? (
-                  <CloseIcon w={3} h={3} />
+                  <CloseIcon w={3} h={3} color="orange.400" />
                 ) : (
-                  <HamburgerIcon w={5} h={5} />
+                  <HamburgerIcon w={5} h={5} color="orange.400" />
                 )
               }
               variant={'ghost'}
@@ -69,8 +69,8 @@ export const Header = () => {
               spacing={{ base: 2, sm: 4 }}
             >
               <Image
-                w={48}
-                src={'/assets/logo.png'}
+                h={20}
+                src={'/assets/logo_uil.svg'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Stack>

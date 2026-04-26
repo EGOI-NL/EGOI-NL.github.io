@@ -15,7 +15,7 @@ export const DesktopNav = ({ navItems, ...props }) => {
   return (
     <Stack direction={'row'} spacing={4} {...props}>
       {navItems.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} display="flex" flexDirection="column" alignItems="center">
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
@@ -23,10 +23,12 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 href={navItem.href ?? '/#'}
                 fontSize={'sm'}
                 fontWeight={'bold'}
-                color={'gray.600'}
+                color={'orange.300'}
+                textAlign="center"
+                fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
                 _hover={{
                   textDecoration: 'none',
-                  color: 'gray.800',
+                  color: 'orange.100',
                 }}
               >
                 {navItem.label}
@@ -64,14 +66,17 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: 'blue.50' }}
+      _hover={{ bg: 'orange.500', color: 'white' }}
+      fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'blue.400' }}
+            _groupHover={{ color: 'orange.100' }}
             fontWeight={500}
+            fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
+            color={'orange.200'}
           >
             {label}
           </Text>

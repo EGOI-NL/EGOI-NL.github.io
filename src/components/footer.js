@@ -15,7 +15,7 @@ import { footerItems } from '@/data/footer-items'
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={'bold'} my={2}>
+    <Text fontWeight={'bold'} my={2} fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif">
       {children}
     </Text>
   )
@@ -24,9 +24,10 @@ const ListHeader = ({ children }) => {
 export const Footer = () => {
   return (
     <Box
-      bg={'gray.50'}
+      bg={'gray.100'}
       color={'gray.700'}
       as='footer'
+      fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
     >
       <Container maxW='container.lg' my={8} centerContent>
         <SimpleGrid
@@ -42,7 +43,7 @@ export const Footer = () => {
               />
             </Box>
 
-            <Text fontSize={'sm'}>
+            <Text fontSize={'sm'} fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif">
               © {new Date().getFullYear()}, Girls @ Informatica Olympiade. Apache 2.0
               Licensed.
             </Text>
@@ -55,6 +56,7 @@ export const Footer = () => {
                   key={item.label}
                   href={item.href}
                   fontSize={'sm'}
+                  fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
                   _hover={{ color: 'blue.500' }}
                 >
                   {item.label}

@@ -4,8 +4,8 @@ import '@fontsource-variable/inter'
 
 
 const fonts = {
-  body: "'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-  heading: "'Inter Variable', 'Work Sans', system-ui, sans-serif",
+  body: "'Neue Haas', 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+  heading: "'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif",
 }
 
 export const customTheme = extendTheme(
@@ -15,6 +15,11 @@ export const customTheme = extendTheme(
     styles: {
       global: {
         html: { scrollBehavior: 'smooth' },
+        // Import custom font CSS
+        '@import': "/assets/fonts.css",
+        'h1, h2, h3, h4, h5, h6': {
+          color: 'gray.600',
+        },
       },
     },
   },
