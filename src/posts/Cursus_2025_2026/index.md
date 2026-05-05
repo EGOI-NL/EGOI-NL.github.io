@@ -20,8 +20,8 @@ Bij Eljakim IT waren we weer van harte welkom voor een dag vol programmeren én 
 **17 & 18 januari 2026 – Programmeerweekend bij Harvest en het Boshuis in Driebergen** <br />
 Dit jaar vond het programmeerweekend plaats in Driebergen. Op vrijdag waren we te gast bij Harvest, waarna we de avond en zaterdag doorbrachten in het boshuis. Het was een intensief, leerzaam en vooral ontzettend leuk weekend!
 
-**28 maart 2026 – Finale Beverdag bij Universiteit Delft** <br />
-Bij de finale van de Beverwedstrijd in Delft waren we weer van de partij. Voorafgaand aan de wedstrijd gaven we een korte programmeercursus aan de deelnemers. Dit keer waren er meerdere meiden die enthousiast waren en in april zullen aansluiten bij onze cursus!
+**28 maart 2026 – Finale Beverdag bij TU Delft** <br />
+Bij de finale van de Beverwedstrijd aan de TU Delft waren we weer van de partij. Voorafgaand aan de wedstrijd gaven we een korte programmeercursus aan de deelnemers. Dit keer waren er meerdere meiden die enthousiast waren en in april zullen aansluiten bij onze cursus!
 
 **11 april 2026 – Eljakim IT in Utrecht** <br />
 De afsluitende bijeenkomst van het seizoen vond opnieuw plaats bij Eljakim IT. Er werd volop geprogrammeerd en gepuzzeld, en aan het einde van de dag vroegen de meiden al om nóg een programmeerdag dit jaar!

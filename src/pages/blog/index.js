@@ -9,9 +9,7 @@ import {
   Stack,
   StackDivider,
   Text,
-  useColorModeValue,
   VStack,
-  useColorMode,
 } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion'
@@ -31,27 +29,26 @@ const SinglePost = ({ page }) => {
       transition={{ duration: 0.2 }}
     >
       <Stack
-        spacing='2'
-        align='stretch'
-        my={{ base: 5, md: 10 }}
+        spacing='1'
+        align='center'
+        my={{ base: 2, md: 4 }}
         direction={{ base: 'column', md: 'row' }}
+        justify='center'
       >
-        <Box>
+        <Box textAlign='center' w='100%'>
           <Link href={`/blog/${page.id}`} fontSize={'xl'} fontWeight={'bold'}>
             {page.title}
           </Link>
 
           <Text
             fontSize={'sm'}
-            color={
-              useColorMode().colorMode === 'dark' ? 'gray.300' : 'gray.600'
-            }
-            py={4}
+            color={'gray.600'}
+            py={1}
           >
             {formatDate(date)} ({distanceToNow(date)})
           </Text>
 
-          <Text noOfLines={3} py={4}>
+          <Text noOfLines={3} py={1}>
             {page.summary}
           </Text>
         </Box>
@@ -73,7 +70,7 @@ export default function Blog({ allPostsData }) {
             Blog
           </Heading>
           <Text
-            color={useColorModeValue('gray.800', 'white')}
+            color={'gray.800'}
             fontSize={'lg'}
             textAlign={'center'}
           >
@@ -84,7 +81,7 @@ export default function Blog({ allPostsData }) {
 
           <VStack
             divider={<StackDivider borderColor='gray.200' />}
-            spacing={-4}
+            spacing={0}
             align='stretch'
           >
             {allPostsData.map((page) => {

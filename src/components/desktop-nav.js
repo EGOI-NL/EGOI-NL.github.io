@@ -9,14 +9,13 @@ import {
   PopoverTrigger,
   Stack,
   Text,
-  useColorModeValue,
 } from '@chakra-ui/react'
 
 export const DesktopNav = ({ navItems, ...props }) => {
   return (
     <Stack direction={'row'} spacing={4} {...props}>
       {navItems.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} display="flex" flexDirection="column" alignItems="center">
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
@@ -24,12 +23,12 @@ export const DesktopNav = ({ navItems, ...props }) => {
                 href={navItem.href ?? '/#'}
                 fontSize={'sm'}
                 fontWeight={'bold'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                color={useColorModeValue('gray.600', 'gray.200')}
+                color={'orange.300'}
+                textAlign="center"
+                fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
                 _hover={{
                   textDecoration: 'none',
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  color: useColorModeValue('gray.800', 'white'),
+                  color: 'orange.100',
                 }}
               >
                 {navItem.label}
@@ -40,8 +39,7 @@ export const DesktopNav = ({ navItems, ...props }) => {
               <PopoverContent
                 border={0}
                 boxShadow={'xl'}
-                // eslint-disable-next-line react-hooks/rules-of-hooks
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={'white'}
                 p={4}
                 rounded={'xl'}
                 minW={'sm'}
@@ -68,14 +66,17 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+      _hover={{ bg: 'orange.500', color: 'white' }}
+      fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'blue.400' }}
+            _groupHover={{ color: 'orange.100' }}
             fontWeight={500}
+            fontFamily="'Neue Haas', 'Champ Black', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
+            color={'orange.200'}
           >
             {label}
           </Text>
