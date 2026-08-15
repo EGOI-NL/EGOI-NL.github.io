@@ -30,4 +30,4 @@ Dan was al de dag van de sluiting aangebroken. De sluitingsceremonie werd gehoud
 
 De laatste ochtend waren al veel teams vertrokken. Op weg naar het vliegveld voelde we ons uitgeput en klaar om naar huis te gaan, maar ook bitterzoet. De EGOI was een fantastische belevenis. De sfeer en de mensen waren heel gezellig. Het was erg leuk om geweldige meiden te ontmoeten over de hele wereld, allemaal met een gedeelde passie voor informatica. We hebben veel nieuwe vrienden gemaakt, waarmee we nog steeds contact houden. Ik heb erg genoten van de wedstrijden. Het was een week waar ik zeker nog vaak naar zal terugkijken als een van de hoogtepunten van mijn jeugd.
 
-
+![EGOI2026_1](/blog/EGOI2026.png)

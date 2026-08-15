@@ -24,7 +24,7 @@ export const Layout = ({
   }, [])
 
   const bannerTitle =
-    <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'>Meld je aan voor het cursusweekend op vrijdag 16 en zaterdag 17 januari 2026!</Link>
+    <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'>Meld je aan voor het nieuwe cursusjaar 2026/2027!</Link>
   const bannerDescription = ''
 
   // Determine the base URL based on the environment
