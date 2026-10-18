@@ -5,7 +5,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang='en'>
         <Head>
-          <link rel="stylesheet" href="/assets/fonts.css" />
+          <link rel="stylesheet" href="/startpage/fonts.css" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         </Head>
         <body>

@@ -16,7 +16,7 @@ export const customTheme = extendTheme(
       global: {
         html: { scrollBehavior: 'smooth' },
         // Import custom font CSS
-        '@import': "/assets/fonts.css",
+        '@import': "/startpage/fonts.css",
         'h1, h2, h3, h4, h5, h6': {
           color: 'gray.600',
         },

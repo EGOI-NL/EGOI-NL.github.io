@@ -70,7 +70,7 @@ export const Header = () => {
             >
               <Image
                 h={20}
-                src={'/assets/logo_uil.svg'}
+                src={'/startpage/logo_uil.svg'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Stack>

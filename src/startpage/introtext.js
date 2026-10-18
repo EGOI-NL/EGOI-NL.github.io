@@ -46,7 +46,7 @@ export const IntroText = () => {
           </Stack>
           <Stack flex={1} spacing={{ base: 10, md: 20 }} maxW={{ base: '100%', md: 'auto' }}>
             <Image
-              src={'/assets/Programmeercursus.png'}
+              src={'/startpage/Programmeercursus.png'}
               alt='Drie meisjes die programmeren.'
               objectFit='contain'
               maxW='100%'

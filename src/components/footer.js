@@ -38,7 +38,7 @@ export const Footer = () => {
             <Box>
               <Image
                 w={32}
-                src={'/assets/logo.png'}
+                src={'/startpage/logo.png'}
                 alt={'Girls @ Informatica Olympiade logo'}
               />
             </Box>
