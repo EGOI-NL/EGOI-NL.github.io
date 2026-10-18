@@ -37,7 +37,6 @@ export default function Post({ source, frontmatter, postId }) {
   return (
     <Layout
       title={`${frontmatter.title}`}
-      card={`/cards/${postId}.png`}
       description={frontmatter.summary}
       url={`/blog/${postId}`}
     >

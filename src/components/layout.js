@@ -13,7 +13,6 @@ ReactGA.initialize('G-62W42QPRQC')
 export const Layout = ({
   title,
   description,
-  card,
   children,
   url = 'https://girls.informaticaolympiade.nl',
   enableBanner,
@@ -41,9 +40,6 @@ export const Layout = ({
         <meta property='og:title' content={title} />
         <meta property='og:description' content={description} />
         <meta property='og:url' content={url} />
-        <meta name='twitter:title' content={title} />
-        <meta name='twitter:description' content={description} />
-        <meta name='twitter:card' content='summary_large_image' />
         <link
           rel='icon'
           type='image/png'

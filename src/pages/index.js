@@ -6,9 +6,6 @@ export default function IndexPage() {
     <Layout
       url={`/`}
       title={'Girls @ Informatica Olympiade'}
-      card={
-        'assets/logo_no-text.png'
-      }
       enableBanner
     >
       <IntroText />
