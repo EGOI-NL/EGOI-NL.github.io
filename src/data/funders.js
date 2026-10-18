@@ -8,8 +8,8 @@ export const Funders = [
   {
     name: 'Betadecanen',
     logo: '/funders-logos/Betadecanen_nl.png',
-    url: 'https://betadecanen.nl/projecten-miv-2023/',
-    jaren: '2022-2025'
+    url: 'https://betadecanen.nl/',
+    jaren: '2022-2029'
   },
   {
     name: 'Meet and Code',
