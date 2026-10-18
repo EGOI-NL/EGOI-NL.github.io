@@ -16,7 +16,7 @@ export const Layout = ({
   card,
   children,
   url = 'https://girls.informaticaolympiade.nl',
-  enableBanner = false,
+  enableBanner,
 }) => {
   // Track page views
   useEffect(() => {
