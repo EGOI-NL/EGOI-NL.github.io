@@ -24,14 +24,7 @@ export const Layout = ({
         <meta property='og:title' content={title} />
         <meta property='og:description' content={description} />
         <meta property='og:url' content={url} />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='96x96'
-          href='/startpage/logo_no-text.png'
-        />
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-        <link rel='icon' type='image/png' href='/favicon.png' />
 
         <title>{title}</title>
       </Head>
