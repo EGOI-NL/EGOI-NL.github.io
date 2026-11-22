@@ -4,11 +4,6 @@ import { Header } from '@/components/header'
 import { Link } from '@/components/mdx'
 import { Box, Flex } from '@chakra-ui/react'
 import Head from 'next/head'
-import ReactGA from 'react-ga4'
-import { useEffect } from 'react'
-
-// Google Analytics
-ReactGA.initialize('G-62W42QPRQC')
 
 export const Layout = ({
   title,
@@ -17,11 +12,6 @@ export const Layout = ({
   url = 'https://girls.informaticaolympiade.nl',
   enableBanner,
 }) => {
-  // Track page views
-  useEffect(() => {
-    ReactGA.send({ hitType: 'pageview' })
-  }, [])
-
   const bannerTitle =
     <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'>Meld je aan voor het nieuwe cursusjaar 2026/2027!</Link>
   const bannerDescription = ''
