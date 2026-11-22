@@ -1,30 +1,18 @@
 import {
-  Avatar,
   Box,
   Button,
   Container,
   Divider,
-  Flex,
   Heading,
   Text,
   VStack,
-  Wrap,
-  WrapItem,
 } from '@chakra-ui/react'
-
 import { ArrowBackIcon } from '@chakra-ui/icons'
-
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
-// import remarkGfm from 'remark-gfm'
-// import rehypeSlug from 'rehype-slug'
-// import remarkMath from 'remark-math'
-// import rehypeKatex from 'rehype-katex'
-
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
-
 import { Layout } from '@/components/layout'
 import { Link, mapping } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
@@ -35,31 +23,25 @@ export default function Post({ source, frontmatter, postId }) {
 
   return (
     <Layout
-      title={`${frontmatter.title}`}
+      title={frontmatter.title}
       description={frontmatter.summary}
       url={`/blog/${postId}`}
     >
       <Box as={'section'}>
         <Container maxW='container.lg' py={10}>
-          <Box spacing='3' alignItems='start'>
+          <Box>
             <VStack paddingTop='30px' spacing='2' alignItems='center'>
               <Heading as={'h1'} textAlign={'center'} size='xl' my={4}>
                 {frontmatter.title}
               </Heading>
-              <Text
-                fontSize={'sm'}
-                color={'gray.600'}
-              >
+              <Text fontSize={'sm'} color={'gray.600'}>
                 {formatDate(date)} ({distanceToNow(date)})
               </Text>
 
               <Divider my={2} />
             </VStack>
             <br></br>
-            <MDXRemote
-              {...source}
-              components={mapping}
-            />
+            <MDXRemote {...source} components={mapping} />
           </Box>
 
           <Button
@@ -93,13 +75,7 @@ export async function getStaticProps({ params }) {
   const filePath = path.join(process.cwd(), 'src/posts', postData.file)
   const source = fs.readFileSync(filePath, 'utf8')
   const { content, data } = matter(source)
-  const mdxSource = await serialize(content, {
-  //   mdxOptions: {
-  //     // remarkPlugins: [remarkGfm, remarkMath],
-  //     rehypePlugins: [rehypeSlug, rehypeKatex],
-  //     format: 'mdx',
-  //   },
-  })
+  const mdxSource = await serialize(content)
 
   return { props: { source: mdxSource, frontmatter: data, postId: params.id } }
 }
