@@ -1,19 +1,13 @@
 import {
-  Avatar,
-  AvatarGroup,
   Box,
   Container,
   Divider,
   Heading,
-  Spacer,
-  Stack,
   StackDivider,
   Text,
   VStack,
 } from '@chakra-ui/react'
-
 import { motion } from 'framer-motion'
-
 import { Layout } from '@/components/layout'
 import { Link } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
@@ -28,52 +22,32 @@ const SinglePost = ({ page }) => {
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
     >
-      <Stack
-        spacing='1'
-        align='center'
-        my={{ base: 2, md: 4 }}
-        direction={{ base: 'column', md: 'row' }}
-        justify='center'
-      >
-        <Box textAlign='center' w='100%'>
-          <Link href={`/blog/${page.id}`} fontSize={'xl'} fontWeight={'bold'}>
-            {page.title}
-          </Link>
+      <Box textAlign='center' w='100%' my={{ base: 2, md: 4 }}>
+        <Link href={`/blog/${page.id}`} fontSize='xl' fontWeight='bold'>
+          {page.title}
+        </Link>
 
-          <Text
-            fontSize={'sm'}
-            color={'gray.600'}
-            py={1}
-          >
-            {formatDate(date)} ({distanceToNow(date)})
-          </Text>
+        <Text fontSize='sm' color='gray.600' py={1}>
+          {formatDate(date)} ({distanceToNow(date)})
+        </Text>
 
-          <Text noOfLines={3} py={1}>
-            {page.summary}
-          </Text>
-        </Box>
-        <Spacer />
-      </Stack>
+        <Text noOfLines={3} py={1}>
+          {page.summary}
+        </Text>
+      </Box>
     </motion.div>
   )
 }
 
 export default function Blog({ allPostsData }) {
   return (
-    <Layout
-      title={'Blog | Girls @ Informatica Olympiade'}
-      url={`/blog`}
-    >
+    <Layout title='Blog | Girls @ Informatica Olympiade' url='/blog'>
       <Box as='section'>
         <Container maxW='container.lg' py={20}>
-          <Heading as='h1' size='2xl' textAlign={'center'} my={4}>
+          <Heading as='h1' size='2xl' textAlign='center' my={4}>
             Blog
           </Heading>
-          <Text
-            color={'gray.800'}
-            fontSize={'lg'}
-            textAlign={'center'}
-          >
+          <Text color='gray.800' fontSize='lg' textAlign='center'>
             Nieuws en updates over de Girls @ Informatica Olympiade
           </Text>
 
@@ -84,9 +58,9 @@ export default function Blog({ allPostsData }) {
             spacing={0}
             align='stretch'
           >
-            {allPostsData.map((page) => {
-              return <SinglePost key={page.id} page={page} />
-            })}
+            {allPostsData.map((page) => (
+              <SinglePost key={page.id} page={page} />
+            ))}
           </VStack>
           <Divider my={2} borderColor='gray.200' />
         </Container>
@@ -96,10 +70,9 @@ export default function Blog({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsMetadata()
   return {
     props: {
-      allPostsData,
+      allPostsData: getSortedPostsMetadata(),
     },
   }
 }
