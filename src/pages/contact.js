@@ -1,14 +1,11 @@
 import { Layout } from '@/components/layout'
 import { Image } from '@/components/mdx'
 import { Box, Button, Container, Heading, HStack, Link as ChakraLink, Stack, Text } from '@chakra-ui/react'
-import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <Layout
-      title={'Contact'}
-      url={`/contact`}
-    >
+    <Layout title='Contact' url='/contact'>
       <Box as='section' py={20}>
         <Container maxW='container.lg'>
           <Heading as='h1' size='2xl' textAlign={'center'}>
@@ -22,7 +19,6 @@ const Contact = () => {
             </ChakraLink>
           </Text>
 
-          {/* Meld je aan - sectie */}
           <Box textAlign="center" mb={12}>
             <Text fontSize="lg" mb={4} fontWeight="semibold">
               Wil je meedoen? Geef je dan snel op!
@@ -42,7 +38,6 @@ const Contact = () => {
             </Button>
           </Box>
 
-          {/* Socials - sectie */}
           <Box textAlign="center" mb={12}>
             <Text fontSize="lg" mb={4} fontWeight="semibold">
               Je kan ons ook vinden op:
@@ -78,14 +73,12 @@ const Contact = () => {
             </HStack>
           </Box>
 
-          {/* Tekst boven afbeelding */}
           <Box textAlign="center" mb={6}>
             <Text fontSize="xl" fontWeight="bold">
               Het team
             </Text>
           </Box>
 
-          {/* Afbeelding */}
           <Stack flex={1} spacing={{ base: 10, md: 20 }} align="center">
             <Image
               src={'/team/team.png'}

@@ -40,7 +40,7 @@ export default function Post({ source, frontmatter, postId }) {
 
               <Divider my={2} />
             </VStack>
-            <br></br>
+            <br />
             <MDXRemote {...source} components={mapping} />
           </Box>
 
@@ -63,9 +63,8 @@ export default function Post({ source, frontmatter, postId }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostsIds()
   return {
-    paths,
+    paths: getAllPostsIds(),
     fallback: false,
   }
 }

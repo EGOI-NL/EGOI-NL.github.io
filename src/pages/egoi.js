@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout'
-import { Image, Link } from '@/components/mdx'
-import { Box, Container, Heading, SimpleGrid, Text, Stack,Table,Thead, Tbody,Tr,Th,Td,TableContainer,} from '@chakra-ui/react'
+import { Image } from '@/components/mdx'
+import { Box, Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 
 const Egoi = () => {
   return (
@@ -24,67 +24,63 @@ const Egoi = () => {
             “Eerlijk gezegd: toen ik voor het eerst meedeed aan girls@informaticaolympiade.nl had ik nooit gedacht dat ik ooit naar de EGOI zou gaan. Ik vroeg me zelfs af of ik wel goed genoeg was in programmeren. Gelukkig kreeg ik op elke stap van de cursus tot de EGOI geweldige steun van de trainsters en mede-deelneemsters. Ik ben trots dat ik ben gegroeid van een complete beginner in de programmeertaal C++ naar het vertegenwoordigen van Nederland bij de EGOI en het behalen van de 6e plek in de NIO-finale. Proberen is de enige manier om erachter te komen hoe ver je kunt komen! Dus, voor elke leerling die van puzzels, logische uitdagingen en het oplossen van problemen houdt: Doe mee aan deze cursus!”
           </Text>
 
-      <Box>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
-        {[
-          { src: '/egoi/FotoEGOI6.JPG', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI2.JPG', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI3.JPG', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI4.JPG', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI5.jpg', alt: 'Team NL op de EGOI' },
-          { src: '/egoi/FotoEGOI1.JPG', alt: 'Team NL op de EGOI' }
-        ].map(({ src, alt }) => (
-            <Image
-              key={alt}
-              src={src}
-              alt={alt}
-              objectFit="contain"
-              maxW="100%"
-              border="1px solid"
-              borderColor="gray.300"
-              borderRadius="md"
-              boxShadow="sm"
-              mx="auto"
-            />
-          ))}
-        </SimpleGrid>
-      </Box>
+          <Box>
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
+              {[
+                { src: '/egoi/FotoEGOI6.JPG', alt: 'Team NL op de EGOI' },
+                { src: '/egoi/FotoEGOI2.JPG', alt: 'Team NL op de EGOI' },
+                { src: '/egoi/FotoEGOI3.JPG', alt: 'Team NL op de EGOI' },
+                { src: '/egoi/FotoEGOI4.JPG', alt: 'Team NL op de EGOI' },
+                { src: '/egoi/FotoEGOI5.jpg', alt: 'Team NL op de EGOI' },
+                { src: '/egoi/FotoEGOI1.JPG', alt: 'Team NL op de EGOI' },
+              ].map(({ src, alt }) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt={alt}
+                  objectFit="contain"
+                  maxW="100%"
+                  border="1px solid"
+                  borderColor="gray.300"
+                  borderRadius="md"
+                  boxShadow="sm"
+                  mx="auto"
+                />
+              ))}
+            </SimpleGrid>
+          </Box>
 
-      <Box as="section" textAlign="center" px={{ base: 4, md: 0 }} py={12} bg="orange.50">
-        <Heading as="h2" size="lg" mb={8}>
-          De EGOI teams van de afgelopen jaren
-        </Heading>
-        {[
-          { src: '/egoi/egoi-team-2026.png', alt: 'Het 2026 EGOI-NL team' },
-          { src: '/egoi/egoi-team-2025.png', alt: 'Het 2025 EGOI-NL team' },
-          { src: '/egoi/egoi-team-2024.png', alt: 'Het 2024 EGOI-NL team' },
-          { src: '/egoi/egoi-team-2023.png', alt: 'Het 2023 EGOI-NL team' },
-          { src: '/egoi/egoi-team-2022.png', alt: 'Het 2022 EGOI-NL team' },
-          { src: '/egoi/egoi-team-2021.png', alt: 'Het 2021 EGOI-NL team' },
-        ].map(({ src, alt }) => (
-          <Image
-            key={alt}
-            src={src}
-            alt={alt}
-            objectFit="contain"
-            mt={10}
-            maxW={['100%', '400px', '600px']}
-            mx="auto"
-            border="1px solid"
-            borderColor="gray.300"
-            borderRadius="md"
-            boxShadow="sm"
-          />
-        ))}
+          <Box as="section" textAlign="center" px={{ base: 4, md: 0 }} py={12} bg="orange.50">
+            <Heading as="h2" size="lg" mb={8}>
+              De EGOI teams van de afgelopen jaren
+            </Heading>
+            {[
+              { src: '/egoi/egoi-team-2026.png', alt: 'Het 2026 EGOI-NL team' },
+              { src: '/egoi/egoi-team-2025.png', alt: 'Het 2025 EGOI-NL team' },
+              { src: '/egoi/egoi-team-2024.png', alt: 'Het 2024 EGOI-NL team' },
+              { src: '/egoi/egoi-team-2023.png', alt: 'Het 2023 EGOI-NL team' },
+              { src: '/egoi/egoi-team-2022.png', alt: 'Het 2022 EGOI-NL team' },
+              { src: '/egoi/egoi-team-2021.png', alt: 'Het 2021 EGOI-NL team' },
+            ].map(({ src, alt }) => (
+              <Image
+                key={src}
+                src={src}
+                alt={alt}
+                objectFit="contain"
+                mt={10}
+                maxW={['100%', '400px', '600px']}
+                mx="auto"
+                border="1px solid"
+                borderColor="gray.300"
+                borderRadius="md"
+                boxShadow="sm"
+              />
+            ))}
+          </Box>
+        </Container>
       </Box>
-      </Container>
-      </Box>
-
     </Layout>
-
-
   )
 }
-
 
 export default Egoi

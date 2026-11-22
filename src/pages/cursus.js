@@ -1,14 +1,25 @@
 import { Layout } from '@/components/layout'
 import { Image, Link } from '@/components/mdx'
-import { Box, Button, Container, Heading, Link as ChakraLink, SimpleGrid, Text, Stack,Table,Thead,Tbody,Tr,Th,Td,TableContainer,} from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Link as ChakraLink,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from '@chakra-ui/react'
 
 const Cursus = () => {
-  const orangeBg = 'orange.100';
+  const orangeBg = 'orange.100'
   return (
-    <Layout
-      title={'Cursus'}
-      url={`/cursus`}
-    >
+    <Layout title='Cursus' url='/cursus'>
       <Box as='section' py={20}>
         <Container maxW='container.lg'>
           <Heading as='h1' size='2xl' textAlign={'center'}>
@@ -18,7 +29,6 @@ const Cursus = () => {
           <Text fontSize={'lg'} py={10}>
             Ongeveer vier keer per jaar organiseren we een cursusdag.
             Dit kan op een vrijdag, zaterdag of zondag zijn. Soms is het zelfs een tweedaags evenement met een overnachting in een jeugdherberg. Meestal zijn de cursusdagen in Baarn, maar ze kunnen door het hele land plaatsvinden.
-
           </Text>
 
           <Text fontSize={'lg'}>
@@ -26,13 +36,13 @@ const Cursus = () => {
           </Text>
           <Text fontSize={'lg'}>
             Check{' '}
-                <Link
-                  href='https://girls.gitbook.io/c++-cursus'
-                  color='blue.500'
-                  isExternal
-                >
-                  hier voor de C++ cursus.
-                </Link>{' '}
+            <Link
+              href='https://girls.gitbook.io/c++-cursus'
+              color='blue.500'
+              isExternal
+            >
+              hier voor de C++ cursus.
+            </Link>{' '}
           </Text>
 
           <Image
@@ -68,8 +78,6 @@ const Cursus = () => {
           >
             Meld je aan!
           </Button>
-
-
           <TableContainer w="100%" pt={10}>
             <Table variant="simple" size="md" tableLayout="fixed">
               <Thead>
@@ -87,7 +95,7 @@ const Cursus = () => {
                 </Tr>
               </Thead>
               <Tbody>
-                  <Tr bg={orangeBg}>
+                <Tr bg={orangeBg}>
                   <Td width="30%">Zaterdag 26 sep 2026</Td>
                   <Td whiteSpace="normal" wordBreak="break-word">
                     Trainingsdag van 10:00 - 16:00 in het witte kerkje op de Kampstraat in Baarn.
@@ -151,10 +159,8 @@ const Cursus = () => {
           </TableContainer>
         </Container>
       </Box>
-
     </Layout>
   )
 }
-
 
 export default Cursus

@@ -3,11 +3,7 @@ import { Layout } from '@/components/layout'
 
 export default function IndexPage() {
   return (
-    <Layout
-      url={`/`}
-      title={'Girls @ Informatica Olympiade'}
-      enableBanner
-    >
+    <Layout url='/' title='Girls @ Informatica Olympiade' enableBanner>
       <IntroText />
       <CursusIntro />
       <EGOI />
