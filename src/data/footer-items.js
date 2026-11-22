@@ -1,5 +1,4 @@
 export const footerItems = {
-
   kolom1: [
     {
       label: 'Meld je aan',
@@ -44,5 +43,4 @@ export const footerItems = {
       href: 'https://www.linkedin.com/company/egoi-nederland',
     },
   ],
-
 }

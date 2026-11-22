@@ -5,5 +5,8 @@ export const menuItems = [
   { label: 'In het nieuws', href: '/nieuws' },
   { label: 'Sponsors', href: '/#funders' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Informatica olympiade', href: 'https://www.informaticaolympiade.nl' },
+  {
+    label: 'Informatica olympiade',
+    href: 'https://www.informaticaolympiade.nl',
+  },
 ]
