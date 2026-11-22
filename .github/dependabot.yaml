@@ -25,11 +25,9 @@ updates:
           - 'd3'
           - 'date*'
           - 'framer*'
-          - 'isomorphic*'
           - 'next*'
           - 'react*'
           - 'rehype*'
-          - 'swr'
       dev-dependencies:
         patterns:
           - '@types/*'
