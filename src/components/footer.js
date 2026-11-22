@@ -1,18 +1,13 @@
 import {
   Box,
-  Button,
   Container,
   SimpleGrid,
   Stack,
   Text,
-  VisuallyHidden,
-  VStack,
 } from '@chakra-ui/react'
 
 import { Image, Link } from '@/components/mdx'
 import { footerItems } from '@/data/footer-items'
-
-
 const ListHeader = ({ children }) => {
   return (
     <Text fontWeight={'bold'} my={2} fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif">

@@ -1,7 +1,6 @@
-import { Alert,  } from '@chakra-ui/react'
+import { Alert } from '@chakra-ui/react'
 
 export const Quote = (props) => {
-
   return (
     <Alert
       mt={4}

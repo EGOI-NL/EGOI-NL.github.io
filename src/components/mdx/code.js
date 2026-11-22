@@ -5,11 +5,7 @@ import { CodeContainer } from './code-container'
 import { CopyButton } from './copy-button'
 
 export const Code = ({ className, ...props }) => {
-  // extract language from className
   const match = /language-(\w+)/.exec(className || '')
-
-  // check if classname is undefined and length of props.children contains single line
-  // if so, render ChakraCode component
 
   return typeof className === 'undefined' && !props.children.includes('\n') ? (
     <ChakraCode fontSize='sm' {...props} />

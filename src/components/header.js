@@ -12,11 +12,8 @@ import {
   Stack,
   useDisclosure,
 } from '@chakra-ui/react'
-import React from 'react'
 
 export const Header = () => {
-  const navItems = React.useMemo(() => menuItems, [])
-
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -84,13 +81,13 @@ export const Header = () => {
             justify={'flex-end'}
           >
             <DesktopNav
-              navItems={navItems}
+              navItems={menuItems}
               display={{ base: 'none', md: 'flex' }}
             />
           </Stack>
         </Container>
       </Flex>
-      <MobileNav isOpen={isOpen} navItems={navItems} />
+      <MobileNav isOpen={isOpen} navItems={menuItems} />
     </Box>
   )
 }

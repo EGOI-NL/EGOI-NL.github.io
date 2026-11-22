@@ -16,12 +16,6 @@ export const Layout = ({
     <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfuHpQAI3VHwNxXhidyIdaktSj3SgYxGZk0Lwz_SH75LJVd1w/viewform'>Meld je aan voor het nieuwe cursusjaar 2026/2027!</Link>
   const bannerDescription = ''
 
-  // Determine the base URL based on the environment
-  const baseUrl =
-    process.env.NODE_ENV === 'production'
-      ? 'https://girls.informaticaolympiade.nl'
-      : 'http://localhost:3000'
-
   return (
     <>
       <Head>
@@ -47,14 +41,10 @@ export const Layout = ({
         gap={0}
         minHeight={'100vh'}
       >
-        <Box pt="20px">
+        <Box pt='20px'>
           <Header />
           {enableBanner && (
-            <Banner
-              title={bannerTitle}
-              description={bannerDescription}
-            >
-            </Banner>
+            <Banner title={bannerTitle} description={bannerDescription} />
           )}
           {children}
         </Box>
