@@ -12,7 +12,7 @@ const Egoi = () => {
           </Heading>
 
           <Text fontSize="lg" mb={4} lineHeight="tall">
-            De European Girls' Olympiad in Informatics (EGOI) is een programmeerwedstrijd voor meisjes en niet-binaire middelbare scholieren uit de hele wereld. De EGOI is een weeklang evenement, waarin naast de wedstrijddagen ook volop ruimte is voor sociale activiteiten om de meiden uit andere landen te leren kennen.
+            De European Girls&apos; Olympiad in Informatics (EGOI) is een programmeerwedstrijd voor meisjes en niet-binaire middelbare scholieren uit de hele wereld. De EGOI is een weeklang evenement, waarin naast de wedstrijddagen ook volop ruimte is voor sociale activiteiten om de meiden uit andere landen te leren kennen.
           </Text>
 
           <Text fontSize="lg" mb={4} lineHeight="tall">

@@ -16,7 +16,12 @@ const nextConfig = {
   // Append the default value with md extensions
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   images: {
-    domains: ["raw.githubusercontent.com", "numpy.org", "dask.org", "chainer.org"],
+    remotePatterns: [
+      { protocol: "https", hostname: "raw.githubusercontent.com" },
+      { protocol: "https", hostname: "numpy.org" },
+      { protocol: "https", hostname: "dask.org" },
+      { protocol: "https", hostname: "chainer.org" },
+    ],
   },
   output: 'export'
 }

@@ -24,7 +24,7 @@ export const EGOI = () => {
         >
           <Stack flex={3} spacing={{ base: 5, md: 10 }}>
             <Text fontSize={'lg'}>
-              De European Girls' Olympiad in Informatics (EGOI) is een programmeerwedstrijd voor meisjes en niet-binaire middelbare scholieren uit de hele wereld. De EGOI is een weeklang evenement, waarin naast de wedstrijddagen ook volop ruimte is voor sociale activiteiten om de meiden uit andere landen te leren kennen.
+              De European Girls&apos; Olympiad in Informatics (EGOI) is een programmeerwedstrijd voor meisjes en niet-binaire middelbare scholieren uit de hele wereld. De EGOI is een weeklang evenement, waarin naast de wedstrijddagen ook volop ruimte is voor sociale activiteiten om de meiden uit andere landen te leren kennen.
             </Text>
           </Stack>
           <Stack flex={2} spacing={{ base: 10, md: 20 }}>

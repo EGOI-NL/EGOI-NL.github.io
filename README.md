@@ -13,7 +13,7 @@ This project uses a combination of Javascript and Typescript (Javascript - as th
 
 ## Requirements
 
-1. [Node.js](https://nodejs.org/)
+1. [Node.js](https://nodejs.org/) 20.19+ (20.x), 22.13+ (22.x), or 24+
 2. [npm](https://www.npmjs.com/)
 
 ## Installation for local development
@@ -39,6 +39,8 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
+
+Run `npm run lint` to check the code with ESLint.
 
 ## Acknowledgements
 
