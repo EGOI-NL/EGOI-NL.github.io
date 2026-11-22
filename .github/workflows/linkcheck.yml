@@ -29,10 +29,9 @@ jobs:
         id: readReport
         run: |
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-          echo "FILE_CONTENT<<$EOF" >> $GITHUB_OUTPUT
-          echo "$(cat ${{ env.LYCHEE_REPORT_FILE }})" >> $GITHUB_OUTPUT
-          echo "$EOF" >> $GITHUB_OUTPUT
-      - run: echo "${{ steps.readReport.outputs.FILE_CONTENT }}"
+          echo "FILE_CONTENT<<$EOF" >> "$GITHUB_OUTPUT"
+          echo "$(cat "$LYCHEE_REPORT_FILE")" >> "$GITHUB_OUTPUT"
+          echo "$EOF" >> "$GITHUB_OUTPUT"
       - name: Update link tracking issue (update invalid links)
         if: env.lychee_exit_code != 0
         uses: actions-cool/issues-helper@v3
