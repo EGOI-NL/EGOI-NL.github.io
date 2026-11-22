@@ -1,16 +1,17 @@
 import { Layout } from '@/components/layout'
 import { Image } from '@/components/mdx'
-import { Box, Button, Container, Heading, HStack, Link as ChakraLink, Stack, Text } from '@chakra-ui/react'
+import { PageHeading } from '@/components/page-heading'
+import { Box, Button, Container, HStack, Link as ChakraLink, Stack, Text } from '@chakra-ui/react'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
   return (
     <Layout title='Contact' url='/contact'>
       <Box as='section' py={20}>
-        <Container maxW='container.lg'>
-          <Heading as='h1' size='2xl' textAlign={'center'}>
+        <Container maxW='1024px'>
+          <PageHeading textAlign={'center'}>
             Contact
-          </Heading>
+          </PageHeading>
           <Text fontSize={'lg'} py={10} textAlign="center">
             Wij zijn onderdeel van de stichting informatica olympiade.<br />
             Je kan ons bereiken op:{' '}
@@ -42,18 +43,18 @@ const Contact = () => {
             <Text fontSize="lg" mb={4} fontWeight="semibold">
               Je kan ons ook vinden op:
             </Text>
-            <HStack spacing={6} justify="center">
+            <HStack gap={6} justify="center">
               <Button
                 as={ChakraLink}
                 href="https://www.linkedin.com/company/egoi-nederland"
                 target="_blank"
                 rel="noopener noreferrer"
-                leftIcon={<FaLinkedin />}
                 bg="#0A66C2"
                 color="white"
                 _hover={{ bg: '#004182' }}
                 size="lg"
               >
+                <FaLinkedin />
                 LinkedIn
               </Button>
 
@@ -62,12 +63,12 @@ const Contact = () => {
                 href="https://www.instagram.com/egoi_nl/"
                 target="_blank"
                 rel="noopener noreferrer"
-                leftIcon={<FaInstagram />}
                 bg="#E1306C"
                 color="white"
                 _hover={{ bg: '#AD255F' }}
                 size="lg"
               >
+                <FaInstagram />
                 Instagram
               </Button>
             </HStack>
@@ -79,7 +80,7 @@ const Contact = () => {
             </Text>
           </Box>
 
-          <Stack flex={1} spacing={{ base: 10, md: 20 }} align="center">
+          <Stack flex={1} gap={{ base: 10, md: 20 }} align="center">
             <Image
               src={'/team/team.png'}
               alt='De vrijwilligers van Girls @ Informatica Olympiade'

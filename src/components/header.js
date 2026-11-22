@@ -2,7 +2,7 @@ import { DesktopNav } from '@/components/desktop-nav'
 import { Link } from '@/components/mdx'
 import { MobileNav } from '@/components/mobile-nav'
 import { menuItems } from '@/data/menu-items'
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { FiMenu, FiX } from 'react-icons/fi'
 import {
   Box,
   Container,
@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 
 export const Header = () => {
-  const { isOpen, onToggle } = useDisclosure()
+  const { open, onToggle } = useDisclosure()
 
   return (
     <Box>
@@ -32,7 +32,7 @@ export const Header = () => {
           backdropFilter: 'saturate(180%) blur(5px)',
         }}
       >
-        <Container as={Flex} maxW={'container.lg'} align={'center'}>
+        <Container as={Flex} maxW={'1024px'} align={'center'}>
           <Flex
             flex={{ base: '0', md: 'auto' }}
             ml={{ base: -2 }}
@@ -41,17 +41,16 @@ export const Header = () => {
           >
             <IconButton
               onClick={onToggle}
-              icon={
-                isOpen ? (
-                  <CloseIcon w={3} h={3} color="orange.400" />
-                ) : (
-                  <HamburgerIcon w={5} h={5} color="orange.400" />
-                )
-              }
               variant={'ghost'}
               size={'sm'}
               aria-label={'Toggle Navigation'}
-            />
+            >
+              {open ? (
+                <FiX size={12} color="var(--chakra-colors-orange-400)" />
+              ) : (
+                <FiMenu size={20} color="var(--chakra-colors-orange-400)" />
+              )}
+            </IconButton>
           </Flex>
 
           <Flex
@@ -63,7 +62,7 @@ export const Header = () => {
               href={'/'}
               direction={'row'}
               alignItems={'center'}
-              spacing={{ base: 2, sm: 4 }}
+              gap={{ base: 2, sm: 4 }}
             >
               <Image
                 h={20}
@@ -76,7 +75,7 @@ export const Header = () => {
           <Stack
             direction={'row'}
             align={'center'}
-            spacing={{ base: 6, md: 8 }}
+            gap={{ base: 6, md: 8 }}
             flex={{ base: 1, md: 'auto' }}
             justify={'flex-end'}
           >
@@ -87,7 +86,7 @@ export const Header = () => {
           </Stack>
         </Container>
       </Flex>
-      <MobileNav isOpen={isOpen} navItems={menuItems} />
+      <MobileNav isOpen={open} navItems={menuItems} />
     </Box>
   )
 }

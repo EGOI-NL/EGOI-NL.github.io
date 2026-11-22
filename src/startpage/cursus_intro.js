@@ -13,17 +13,17 @@ import { Heading } from '@/components/mdx'
 export const CursusIntro = () => {
   return (
     <Box id={'cursus'} as='section'>
-      <Container maxW='container.lg'>
-        <Heading as='h1' size='2xl'>
+      <Container maxW='1024px'>
+        <Heading as='h1'>
           Leer programmeren
         </Heading>
         <Stack
           align={'center'}
-          spacing={{ base: 8, md: 10 }}
+          gap={{ base: 8, md: 10 }}
           justify={'center'}
           direction={{ base: 'column', md: 'row' }}
         >
-          <Stack flex={3} spacing={{ base: 5, md: 10 }}>
+          <Stack flex={3} gap={{ base: 5, md: 10 }}>
             <Text fontSize={'lg'}>
               Ongeveer vier keer per jaar organiseren we een cursusdag. Dit kan op een vrijdag, zaterdag of zondag zijn. Soms is het zelfs een tweedaags evenement met een overnachting in een jeugdherberg. Meestal zijn de cursusdagen in Utrecht, maar er is geen vaste locatie - ze kunnen door het hele land plaatsvinden.
             </Text>
@@ -33,7 +33,7 @@ export const CursusIntro = () => {
               De cursus is gratis. Wij zorgen voor snacks, drinken en een lunch. Ook organiseren we een gezellige activiteit tijdens de lunchpauze.
             </Text>
           </Stack>
-          <Stack flex={2} spacing={{ base: 10, md: 20 }}>
+          <Stack flex={2} gap={{ base: 10, md: 20 }}>
             {
               <Image
                 src={'/cursus/cursus.png'}
@@ -57,7 +57,6 @@ export const CursusIntro = () => {
                 <Link
                   href='https://girls.gitbook.io/c++-cursus'
                   color='blue.500'
-                  isExternal
                 >
                   hier voor de C++ cursus.
                 </Link>{' '}

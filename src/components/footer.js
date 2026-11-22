@@ -24,12 +24,12 @@ export const Footer = () => {
       as='footer'
       fontFamily="'Neue Haas', 'Inter Variable', 'Work Sans', system-ui, sans-serif"
     >
-      <Container maxW='container.lg' my={8} centerContent>
+      <Container maxW='1024px' my={8} centerContent>
         <SimpleGrid
           columns={{ base: 1, sm: 2, md: 4 }}
-          spacing={{ base: 2, md: 8 }}
+          gap={{ base: 2, md: 8 }}
         >
-          <Stack spacing={6}>
+          <Stack gap={6}>
             <Box>
               <Image
                 w={32}

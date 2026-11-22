@@ -5,12 +5,12 @@ import { Image } from '@/components/mdx'
 export const IntroText = () => {
   return (
     <Box as='section'>
-        <Container maxW='container.lg' pt={24} pb={2} centerContent px={4}>
+        <Container maxW='1024px' pt={24} pb={2} centerContent px={4}>
           <Stack
-            spacing={{ base: 8, md: 10 }}
+            gap={{ base: 8, md: 10 }}
             direction={{ base: 'column', md: 'row' }}
           >
-          <Stack flex={1} spacing={{ base: 8, md: 10 }}>
+          <Stack flex={1} gap={{ base: 8, md: 10 }}>
             <Heading
               lineHeight={1.1}
               fontWeight={600}
@@ -44,7 +44,7 @@ export const IntroText = () => {
                 Als je dat leuk vindt dan helpen we je verder met competitief programmeren, zodat je kans kunt maken om mee te doen aan de European Girls Olympiad in Informatics.
             </Text>
           </Stack>
-          <Stack flex={1} spacing={{ base: 10, md: 20 }} maxW={{ base: '100%', md: 'auto' }}>
+          <Stack flex={1} gap={{ base: 10, md: 20 }} maxW={{ base: '100%', md: 'auto' }}>
             <Image
               src={'/startpage/Programmeercursus.png'}
               alt='Drie meisjes die programmeren.'
@@ -53,7 +53,7 @@ export const IntroText = () => {
               height='auto'
             />
 
-            <Stack spacing={4} direction={{ base: 'column', md: 'row' }} align="center" justify="center" pt={6}>
+            <Stack gap={4} direction={{ base: 'column', md: 'row' }} align="center" justify="center" pt={6}>
               <Button
                 as={ChakraLink}
                 variant="outline"
@@ -75,7 +75,6 @@ export const IntroText = () => {
                 href="https://www.linkedin.com/company/egoi-nederland"
                 target="_blank"
                 rel="noopener noreferrer"
-                leftIcon={<FaLinkedin />}
                 bg="#0A66C2"
                 color="white"
                 _hover={{ bg: '#004182' }}
@@ -83,6 +82,7 @@ export const IntroText = () => {
                 minW={0}
                 w={{ base: '100%', md: 'auto' }}
               >
+                <FaLinkedin />
                 LinkedIn
               </Button>
 
@@ -91,7 +91,6 @@ export const IntroText = () => {
                 href="https://www.instagram.com/egoi_nl/"
                 target="_blank"
                 rel="noopener noreferrer"
-                leftIcon={<FaInstagram />}
                 bg="#E1306C"
                 color="white"
                 _hover={{ bg: '#AD255F' }}
@@ -99,6 +98,7 @@ export const IntroText = () => {
                 minW={0}
                 w={{ base: '100%', md: 'auto' }}
               >
+                <FaInstagram />
                 Instagram
               </Button>
             </Stack>

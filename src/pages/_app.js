@@ -4,7 +4,7 @@ import '../../public/startpage/fonts.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider resetCSS theme={customTheme}>
+    <ChakraProvider value={customTheme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )

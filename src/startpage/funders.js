@@ -6,7 +6,6 @@ import {
   Link,
   Grid,
   GridItem,
-  Tooltip,
 } from '@chakra-ui/react'
 import React from 'react'
 import { Funders as data } from '@/data/funders'
@@ -17,8 +16,8 @@ export const Funders = () => {
   const funders = React.useMemo(() => data, [])
   return (
     <Box id={'funders'} as='section'>
-      <Container maxW='container.lg' centerContent>
-        <Heading as='h1' size='2xl'>
+      <Container maxW='1024px' centerContent>
+        <Heading as='h1'>
           Sponsors
         </Heading>
 
@@ -33,19 +32,20 @@ export const Funders = () => {
               justifyContent='center'
             >
             {funders.map((funder, index) => (
-              <Tooltip key={index} label={funder.name}>
-                <GridItem
-                  as={Link}
-                  href={funder.url}
-                  display='flex'
-                  flexDir="column"
-                  alignItems='center'
-                  justifyContent='center'
-                  borderRight={
-                    index < funders.length - 1 ? '1px solid #ccc' : 'none'
-                  }
-                  pr={4}
-                >
+              <GridItem
+                key={index}
+                as={Link}
+                href={funder.url}
+                title={funder.name}
+                display='flex'
+                flexDir="column"
+                alignItems='center'
+                justifyContent='center'
+                borderRight={
+                  index < funders.length - 1 ? '1px solid #ccc' : 'none'
+                }
+                pr={4}
+              >
                   <Image
                     src={funder.logo}
                     maxH={20}
@@ -54,8 +54,7 @@ export const Funders = () => {
                 <Text mt={2} fontSize="sm" textAlign="center">
                   {funder.jaren}
                 </Text>
-                </GridItem>
-              </Tooltip>
+              </GridItem>
             ))}
           </Grid>
         </Box>

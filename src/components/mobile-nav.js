@@ -1,6 +1,6 @@
-import { ChevronDownIcon } from '@chakra-ui/icons'
+import { FiChevronDown } from 'react-icons/fi'
 import {
-  Collapse,
+  Collapsible,
   Flex,
   Icon,
   Stack,
@@ -11,7 +11,7 @@ import {
 import { Link } from '@/components/mdx'
 
 const MobileNavItem = ({ href, children, label }) => {
-  const { isOpen, onToggle } = useDisclosure()
+  const { open, onToggle } = useDisclosure()
 
   const handleToggle = (e) => {
     if (children) {
@@ -21,7 +21,7 @@ const MobileNavItem = ({ href, children, label }) => {
   }
 
   return (
-    <Stack spacing={4} onClick={handleToggle}>
+    <Stack gap={4} onClick={handleToggle}>
       <Flex
         py={2}
         as={Link}
@@ -40,33 +40,35 @@ const MobileNavItem = ({ href, children, label }) => {
         </Text>
         {children && (
           <Icon
-            as={ChevronDownIcon}
             transition={'all .25s ease-in-out'}
-            transform={isOpen ? 'rotate(180deg)' : ''}
+            transform={open ? 'rotate(180deg)' : ''}
             w={6}
             h={6}
-          />
+          >
+            <FiChevronDown />
+          </Icon>
         )}
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={'solid'}
-          borderColor={'gray.200'}
-          align={'start'}
-        >
-          {' '}
-          {children &&
-            children.map((child, index) => (
-              <Link key={index} href={child.href ?? '#'} py={2}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
+      <Collapsible.Root open={open}>
+        <Collapsible.Content>
+          <Stack
+            mt={2}
+            pl={4}
+            borderLeftWidth='1px'
+            borderStyle={'solid'}
+            borderColor={'gray.200'}
+            align={'start'}
+          >
+            {children &&
+              children.map((child, index) => (
+                <Link key={index} href={child.href ?? '#'} py={2}>
+                  {child.label}
+                </Link>
+              ))}
+          </Stack>
+        </Collapsible.Content>
+      </Collapsible.Root>
     </Stack>
   )
 }

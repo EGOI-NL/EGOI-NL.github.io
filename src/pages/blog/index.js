@@ -1,15 +1,15 @@
 import {
   Box,
   Container,
-  Divider,
-  Heading,
-  StackDivider,
+  Separator,
   Text,
   VStack,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { Fragment } from 'react'
 import { Layout } from '@/components/layout'
 import { Link } from '@/components/mdx'
+import { PageHeading } from '@/components/page-heading'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
 import { getSortedPostsMetadata } from '@/lib/posts'
 
@@ -31,7 +31,7 @@ const SinglePost = ({ page }) => {
           {formatDate(date)} ({distanceToNow(date)})
         </Text>
 
-        <Text noOfLines={3} py={1}>
+        <Text lineClamp={3} py={1}>
           {page.summary}
         </Text>
       </Box>
@@ -43,26 +43,25 @@ export default function Blog({ allPostsData }) {
   return (
     <Layout title='Blog | Girls @ Informatica Olympiade' url='/blog'>
       <Box as='section'>
-        <Container maxW='container.lg' py={20}>
-          <Heading as='h1' size='2xl' textAlign='center' my={4}>
+        <Container maxW='1024px' py={20}>
+          <PageHeading textAlign='center' my={4}>
             Blog
-          </Heading>
+          </PageHeading>
           <Text color='gray.800' fontSize='lg' textAlign='center'>
             Nieuws en updates over de Girls @ Informatica Olympiade
           </Text>
 
-          <Divider my={4} borderColor='gray.200' />
+          <Separator my={4} borderColor='gray.200' />
 
-          <VStack
-            divider={<StackDivider borderColor='gray.200' />}
-            spacing={0}
-            align='stretch'
-          >
-            {allPostsData.map((page) => (
-              <SinglePost key={page.id} page={page} />
+          <VStack gap={0} align='stretch'>
+            {allPostsData.map((page, index) => (
+              <Fragment key={page.id}>
+                {index > 0 && <Separator borderColor='gray.200' />}
+                <SinglePost page={page} />
+              </Fragment>
             ))}
           </VStack>
-          <Divider my={2} borderColor='gray.200' />
+          <Separator my={2} borderColor='gray.200' />
         </Container>
       </Box>
     </Layout>

@@ -1,15 +1,16 @@
 import { Layout } from '@/components/layout'
 import { Image } from '@/components/mdx'
+import { PageHeading } from '@/components/page-heading'
 import { Box, Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 
 const Egoi = () => {
   return (
     <Layout title="Egoi" url="/egoi">
       <Box as="section" py={{ base: 12, md: 20 }}>
-        <Container maxW="container.lg" py={6}>
-          <Heading as="h1" size="2xl" textAlign="center" mb={6}>
+        <Container maxW="1024px" py={6}>
+          <PageHeading textAlign="center" mb={6}>
             De European Girls Olympiad in Informatics
-          </Heading>
+          </PageHeading>
 
           <Text fontSize="lg" mb={4} lineHeight="tall">
             De European Girls&apos; Olympiad in Informatics (EGOI) is een programmeerwedstrijd voor meisjes en niet-binaire middelbare scholieren uit de hele wereld. De EGOI is een weeklang evenement, waarin naast de wedstrijddagen ook volop ruimte is voor sociale activiteiten om de meiden uit andere landen te leren kennen.
@@ -25,7 +26,7 @@ const Egoi = () => {
           </Text>
 
           <Box>
-            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={6} px={{ base: 4, md: 0 }}>
               {[
                 { src: '/egoi/FotoEGOI6.JPG', alt: 'Team NL op de EGOI' },
                 { src: '/egoi/FotoEGOI2.JPG', alt: 'Team NL op de EGOI' },
@@ -51,7 +52,7 @@ const Egoi = () => {
           </Box>
 
           <Box as="section" textAlign="center" px={{ base: 4, md: 0 }} py={12} bg="orange.50">
-            <Heading as="h2" size="lg" mb={8}>
+            <Heading as="h2" fontSize={{ base: '2xl', md: '3xl' }} lineHeight={{ base: 1.33, md: 1.2 }} fontWeight="bold" mb={8}>
               De EGOI teams van de afgelopen jaren
             </Heading>
             {[

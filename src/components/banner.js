@@ -1,29 +1,25 @@
-import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
-  Box,
-} from '@chakra-ui/react'
+import { Alert, Box } from '@chakra-ui/react'
+import { FiInfo } from 'react-icons/fi'
 
 export const Banner = ({ title, description, children }) => {
   return (
     <Box pt={16} px={5}>
-      <Alert
+      <Alert.Root
         status='info'
-        variant='solid'
         flexDirection='row'
         alignItems='center'
         justifyContent='center'
         textAlign='center'
         bg='orange.500'
       >
-        <AlertIcon />
+        <Alert.Indicator>
+          <FiInfo />
+        </Alert.Indicator>
 
-        <AlertTitle>{title}</AlertTitle>
-        <AlertDescription>{description}</AlertDescription>
+        <Alert.Title>{title}</Alert.Title>
+        <Alert.Description>{description}</Alert.Description>
         {children}
-      </Alert>
+      </Alert.Root>
     </Box>
   )
 }

@@ -1,17 +1,18 @@
 import { Layout } from '@/components/layout'
 import { Image } from '@/components/mdx'
+import { PageHeading } from '@/components/page-heading'
 import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 
 const Nieuws = () => {
   return (
     <Layout title="Egoi" url="/egoi">
       <Box as="section" py={{ base: 12, md: 20 }}>
-        <Container maxW="container.lg" py={6}>
-          <Heading as="h1" size="2xl" textAlign="center" mb={6}>
+        <Container maxW="1024px" py={6}>
+          <PageHeading textAlign="center" mb={6}>
             EGOI in het nieuws
-          </Heading>
+          </PageHeading>
           <Box>
-            <SimpleGrid columns={{ base: 1, sm: 1, md: 3 }} spacing={6} px={{ base: 4, md: 0 }}>
+            <SimpleGrid columns={{ base: 1, sm: 1, md: 3 }} gap={6} px={{ base: 4, md: 0 }}>
               {[
                 { src: '/nieuws/Nieuws0.png', alt: 'EGOI in het nieuws' },
                 { src: '/nieuws/Nieuws1.PNG', alt: 'Team NL op de EGOI' },
@@ -41,8 +42,8 @@ const Nieuws = () => {
             </SimpleGrid>
           </Box>
           <Box py={20}>
-            <Container maxW='container.lg' centerContent>
-              <Heading as='h2' size='lg' mb={4}>
+            <Container maxW='1024px' centerContent>
+              <Heading as='h2' fontSize={{ base: '2xl', md: '3xl' }} lineHeight={{ base: 1.33, md: 1.2 }} fontWeight='bold' mb={4}>
                 EGOI bij Science Makers Lab 2021
               </Heading>
               <Box
