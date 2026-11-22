@@ -28,7 +28,6 @@ import path from 'path'
 import { Layout } from '@/components/layout'
 import { Link, mapping } from '@/components/mdx'
 import { distanceToNow, formatDate } from '@/lib/date-formatting'
-import { MDXElements } from '@/lib/mdx-elements'
 import { getAllPostsIds, getPostData } from '@/lib/posts'
 
 export default function Post({ source, frontmatter, postId }) {
@@ -59,7 +58,7 @@ export default function Post({ source, frontmatter, postId }) {
             <br></br>
             <MDXRemote
               {...source}
-              components={{ ...mapping, ...MDXElements }}
+              components={mapping}
             />
           </Box>
 
